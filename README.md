@@ -5,7 +5,12 @@ A knowledge base for [XL Converter](https://github.com/JacobDev1/xl-converter) -
 
 **To be released alongside XL Converter 0.9.2**
 
-![](./screenshots/website.webp)
+![](./screenshots/desktop.webp)
+
+|Laptops|Mobiles|
+|:-:|:-:|
+|![](./screenshots/laptop.webp)|![](./screenshots/mobile.webp)|
+
 
 Please, [donate](https://codepoems.eu/donate) to keep the project alive.
 
