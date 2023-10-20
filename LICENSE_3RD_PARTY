@@ -1,0 +1,7 @@
+This project uses the following dependencies
+- Ubuntu font - (Ubuntu font license - https://ubuntu.com/legal/font-licence)
+- Ubuntu Mono font - (Ubuntu font license - https://ubuntu.com/legal/font-licence)
+- ReactJS (MIT)
+- TypeScript (Apache License 2.0)
+- Vite (MIT)
+- SASS (MIT)
