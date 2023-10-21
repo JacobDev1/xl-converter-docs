@@ -1,6 +1,6 @@
 ## XL Converter Documentation
 
-A knowledge base for [XL Converter](https://github.com/JacobDev1/xl-converter) - a powerful image converter I wrote.
+The knowledge base for [XL Converter](https://github.com/JacobDev1/xl-converter) - a powerful image converter I wrote.
 
 
 **To be released alongside XL Converter 0.9.2**
