@@ -93,7 +93,11 @@ table{
     display: inline-block;
     overflow-wrap: break-word;
     max-width: 700px;
-    margin-top: 80px;
+
+    margin-top: 25px;
+    @include md{
+        margin-top: 80px;
+    }
     img{
         max-width: 100%;
         margin-bottom: 10px;
