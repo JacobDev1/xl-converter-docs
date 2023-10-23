@@ -11,6 +11,7 @@ import Converting from "./pages/Converting";
 import Downscaling from "./pages/Downscaling";
 import Troubleshooting from "./pages/Troubleshooting";
 import Settings from "./pages/Settings";
+import Metadata from "./pages/Metadata";
 
 import "./css/main.scss";
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="downscaling" element={<Downscaling />} />
             <Route path="troubleshooting" element={<Troubleshooting />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="metadata" element={<Metadata />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

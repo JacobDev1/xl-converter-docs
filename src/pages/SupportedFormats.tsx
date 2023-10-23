@@ -118,13 +118,5 @@ export default function SupportedFormats(){
                 </tr>
             </tbody>
         </table>
-
-        <h2>Metadata</h2>
-        <ul>
-            <li>If <b>Keep Metadata</b> is not checked, XL Converter wipes metadata for privacy. Disabling ExifTool may make it malfunction.</li>
-            <li>For JPEG XL, do not assume metadata is completely wiped or completely preserved. Support in 3rd party tools is flaky and I can't get the encoder to behave.</li>
-            <li>ExifTool can be disabled in the settings. The fallback mode uses encoder-based implementation, which may preserve or wipe metadata regardless of <b>Keep Metadata</b> state.</li>
-            <li>When wiping, ExifTool is set to remove all metadata except the color tags.</li>
-        </ul>
     </div>);
 }

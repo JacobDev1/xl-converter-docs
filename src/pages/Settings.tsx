@@ -11,8 +11,6 @@ export default function Settings(){
 
         <h2>Conversion</h2>
         <ul>
-            <li>Disable ExifTool - disables metadata management and falls back onto encoder-specific implementation. This makes conversion faster, but the metadata may not be kept or kept when you don't want it to.</li>
-            <li>Enable ExifTool for JPEG XL (Experimental) - enables preserving and removing metadata for JPEG XL. If disabled, JPEG XL will preserve all metadata regardless of <b>Keep Metadata</b> state.</li>
             <li>Downscaling - Custom Resampling - enables resampling mode selection in the <b>Modify Tab</b>. You should probably not change it.</li>
         </ul>
     </>);

@@ -12,6 +12,7 @@ const menuEntries = [
     ["Downscaling", "/downscaling"],
     ["Shortcuts", "/shortcuts"],
     ["Supported Formats", "/supported-formats"],
+    ["Metadata", "/metadata"],
     ["Settings", "/settings"],
     ["Troubleshooting", "/troubleshooting"],
     ["FAQ", "/faq"]
