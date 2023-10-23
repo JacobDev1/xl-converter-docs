@@ -80,7 +80,6 @@ export default function Converting(){
                 <ul>
                     <li>6 - good default</li>
                     <li>0 - very slow, best quality and smallest size</li>
-                    <li>Best Quality - turns "Speed" to 0</li>
                 </ul>
             </li>
         </ul>
