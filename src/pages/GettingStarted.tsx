@@ -43,7 +43,7 @@ export default function GettingStarted(){
                 <a href="https://imageglass.org/" target="_blank">XnViewMP</a>{' / '}
                 <a href="https://imageglass.org/" target="_blank">PhotoQt</a>{' / '}
                 <a href="https://imageglass.org/" target="_blank">PicView</a>{' / '}
-                <a href="https://imageglass.org/" target="_blank">nomacs</a> - alternatively
+                <a href="https://imageglass.org/" target="_blank">nomacs</a> - alternatives
             </li>
         </ul>
         <h3>Linux</h3>

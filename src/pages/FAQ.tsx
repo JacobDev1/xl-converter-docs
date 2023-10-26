@@ -10,10 +10,7 @@ export default function FAQ(){
         <h2>Is XL Converter safe?</h2>
         <p>Of course! The entire source is publicly available. Encoder binaries come either from the official sources or are compiled by myself.</p>
         <p>You can compile every part of this program yourself. All encoders are standard, which means you can easily swap them.</p>
-
-        <h2>Does it support JPEG XL reconstruction?</h2>
-        <p>Yes, you can losslessly shrink all your JPGs. Simply check <b>Lossless</b> under the format select. Smallest Lossless applies reconstruction automatically.</p>
-
+        
         <h2>What are the requirements?</h2>
         <ul>
             <li>System:
@@ -31,13 +28,13 @@ export default function FAQ(){
             </li>
         </ul>
 
-        <h2>What are the "Smart Features"?</h2>
+        <h2>What are the "Intelligent Features"?</h2>
         <p>They are my original concept, namely:</p>
         <ul>
             <li>Dynamic Downscaling</li>
             <li>Intelligent Effort</li>
             <li>Smallest Lossless</li>
         </ul>
-        <p>Each one automates the conversion process in some way - saving you time.</p>
+        <p>Each one automates the conversion process in some way - saving you time. XL Converter is the first program to have such features.</p>
     </div>);
 }

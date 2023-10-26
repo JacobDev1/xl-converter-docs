@@ -106,6 +106,7 @@ export default function Converting(){
             <li>WEBP - simple images (e.g. screenshots)</li>
             <li>PNG - very simple images</li>
         </ul>
+        <p>JPEG XL in lossless mode will automatically <b>Reconstruct JPGs</b> so they take up less space.</p>
 
         <h2>JPEG XL vs AVIF</h2>
 
