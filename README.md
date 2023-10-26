@@ -23,3 +23,22 @@ This website uses ReactJS, TypeScript, SASS, SWC and Vite.
 npm i
 npm run dev
 ```
+
+## Deploying
+
+```
+npm run build
+```
+
+### Apache
+
+Create a file named `.htaccess` with the following inside.
+
+```
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.html [QSA,L]
+```
+
+Then put it next to `index.html`.
