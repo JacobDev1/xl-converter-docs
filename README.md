@@ -2,8 +2,7 @@
 
 The knowledge base for [XL Converter](https://github.com/JacobDev1/xl-converter) - a powerful image converter I wrote.
 
-
-**To be released alongside XL Converter 0.9.2**
+Hosted [here](https://xl-converter-docs.codepoems.eu).
 
 ![](./screenshots/desktop.webp)
 
