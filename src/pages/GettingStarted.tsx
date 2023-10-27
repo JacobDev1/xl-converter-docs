@@ -40,10 +40,10 @@ export default function GettingStarted(){
         <ul>
             <li><a href="https://imageglass.org/" target="_blank">ImageGlass</a> - easiest to use</li>
             <li>
-                <a href="https://imageglass.org/" target="_blank">XnViewMP</a>{' / '}
-                <a href="https://imageglass.org/" target="_blank">PhotoQt</a>{' / '}
-                <a href="https://imageglass.org/" target="_blank">PicView</a>{' / '}
-                <a href="https://imageglass.org/" target="_blank">nomacs</a> - alternatives
+                <a href="https://xnview.com/" target="_blank">XnViewMP</a>{' / '}
+                <a href="https://photoqt.org/" target="_blank">PhotoQt</a>{' / '}
+                <a href="https://picview.org/" target="_blank">PicView</a>{' / '}
+                <a href="https://github.com/nomacs/nomacs" target="_blank">nomacs</a> - alternatives
             </li>
         </ul>
         <h3>Linux</h3>
