@@ -93,7 +93,7 @@ export default function Converting(){
                     <li>60 - looks fine only far away, I wouldn't go any lower</li>
                 </ul>
             </li>
-            <li>Lossless - it works great. You may find the <b>Lossless (only If smaller) option useful here.</b></li>
+            <li>Lossless - it works great. You may find the <b>Lossless (only If smaller)</b> option useful here.</li>
         </ul>
 
         <h2>Formats - Lossless</h2>
