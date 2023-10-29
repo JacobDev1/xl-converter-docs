@@ -64,7 +64,6 @@ export default function Converting(){
                 </ul>
             </li>
         </ul>
-
         <h3>AVIF</h3>
         <p>The quality goes from 0 - 63 as all video codecs do.</p>
         <ul>
@@ -107,6 +106,28 @@ export default function Converting(){
             <li>PNG - very simple images</li>
         </ul>
         <p>JPEG XL in lossless mode will automatically <b>Reconstruct JPGs</b> so they take up less space.</p>
+
+        <h3>JPG Reconstruction</h3>
+        <p>It allows you to:</p>
+        <ul>
+            <li>Convert existing JPG to JPEG XL losslessly (lowers size by 20% - 30%)</li>
+            <li>Reconstruct the orignal JPG from JPEG XL</li>
+        </ul>
+
+        <p>How to use it:</p>
+        <ul>
+            <li>Select JPEG XL format</li>
+            <li>Check <b>lossless</b></li>
+            <li>Reconstruction data will be added to the generated JXL</li>
+        </ul>
+        <p>Note: the input file has to be a JPG, but its aliases (JPEG, JFIF...) are also supported.</p>
+
+        <p>How to reverse it:</p>
+        <ul>
+            <li>Select PNG format</li>
+            <li>Check <b>Reconstruct JPG from JPEG XL</b></li>
+            <li>A JPG will be generated instead of a PNG, If reconstruction data is found</li>
+        </ul>
 
         <h2>JPEG XL vs AVIF</h2>
 
