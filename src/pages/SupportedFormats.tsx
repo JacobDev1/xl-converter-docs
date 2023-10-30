@@ -81,6 +81,11 @@ export default function SupportedFormats(){
                 </tr>
             </tbody>
         </table>
+        <p>Supported aliases</p>
+        <ul>
+            <li><b>JPG</b> - jpg, jpeg, jfif, jif, jpe</li>
+            <li><b>HEIF</b> - heif, heifs, heic, heics, avci, avcs, hif</li>
+        </ul>
 
         <h2>Animation</h2>
         <p>XL Converter is an image-only tool. Animation support is limited, will not be expanded, and may be removed in the future.</p>
