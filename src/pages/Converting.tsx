@@ -67,9 +67,9 @@ export default function Converting(){
         <h3>AVIF</h3>
         <p>The quality goes from 0 - 63 as all video codecs do.</p>
         <ul>
-            <li>Constant Quality - lower is better
+            <li>Constant Quality - lower is better quality and bigger size
                 <ul>
-                    <li>20 - good compromise between size and quality</li>
+                    <li>20 - a good compromise between size and quality</li>
                     <li>30 - space saving sweet-spot</li>
                     <li>40 - reasonable limit for space-saving (looks way worse than 30)</li>
                     <li>50 - very low quality</li>
@@ -88,7 +88,7 @@ export default function Converting(){
             <li>Lossy
                 <ul>
                     <li>90 - great quality, but large size</li>
-                    <li>80 - 60% the size of 90, a bit blurry, but far away looks fine</li>
+                    <li>80 - good compromise between quality and size</li>
                     <li>60 - looks fine only far away, I wouldn't go any lower</li>
                 </ul>
             </li>
@@ -105,7 +105,7 @@ export default function Converting(){
             <li>WEBP - simple images (e.g. screenshots)</li>
             <li>PNG - very simple images</li>
         </ul>
-        <p>JPEG XL in lossless mode will automatically <b>Reconstruct JPGs</b> so they take up less space.</p>
+        <p>JPEG XL automatically appends JPG reconstruction data.</p>
 
         <h3>JPG Reconstruction</h3>
         <p>It allows you to:</p>
