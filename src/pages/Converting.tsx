@@ -92,11 +92,16 @@ export default function Converting(){
                     <li>60 - looks fine only far away, I wouldn't go any lower</li>
                 </ul>
             </li>
-            <li>Lossless - it works great. You may find the <b>Lossless (only If smaller)</b> option useful here.</li>
         </ul>
 
         <h2>Formats - Lossless</h2>
-        <p>XL Converter features the <b>Smallest Lossless</b> mode which is a great tool for using multiple formats. Use the checkboxes to disable the ones you don't want.</p>
+        <h3>Manual</h3>
+        <p>Select <b>JPEG XL, WEBP or PNG</b> then check <b>Lossless</b>.</p>
+        <p>The alternative, <b>Lossless (only If smaller)</b> converts to both lossy and lossless then picks the smaller one. It's especially useful with WEBP</p>
+
+        <h3>Smallest Lossless</h3>
+        <p>XL Converter features <b>Smallest Lossless</b> mode which converts to multiple formats then picks the smallest one.</p>
+        <p>Use the checkboxes to disable the ones you don't want.</p>
         <img src={SmallestLossless} />
 
         <p>Each format is good at a different thing</p>
@@ -105,7 +110,7 @@ export default function Converting(){
             <li>WEBP - simple images (e.g. screenshots)</li>
             <li>PNG - very simple images</li>
         </ul>
-        <p>JPEG XL automatically appends JPG reconstruction data.</p>
+        <p>JPEG XL automatically appends JPG reconstruction data in this mode.</p>
 
         <h3>JPG Reconstruction</h3>
         <p>It allows you to:</p>
