@@ -1,24 +1,10 @@
 import { Outlet, To, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-import logo from "../assets/logo.svg";
 import Footer from "./Footer";
 import TabSelect from "./TabSelect";
 
-const menuEntries = [
-    ["Getting Started", "/"],
-    ["Adding Files", "/adding-files"],
-    ["Converting", "/converting"],
-    ["Downscaling", "/downscaling"],
-    ["Shortcuts", "/shortcuts"],
-    ["Supported Formats", "/supported-formats"],
-    ["Metadata", "/metadata"],
-    ["Settings", "/settings"],
-    ["Troubleshooting", "/troubleshooting"],
-    ["FAQ", "/faq"]
-]
-
-export default function Navigation(){
+export default function Navigation({menuEntries}:{menuEntries: Array<Array<string | string>>}){
     const [selectedTab, setSelectedTab] = useState(getCurrentIndex());
     const navigate = useNavigate();
 
@@ -38,13 +24,6 @@ export default function Navigation(){
     return(<>
         {/* Desktop Menu */}
         <div className="navigation">
-            <div className="logo">
-                <a href="https://codepoems.eu/xl-converter" target="_blank">
-                    <img src={logo} />
-                    <h2>XL Converter</h2>
-                </a>
-                
-            </div>
 
             <div className="navbar">
                 {menuEntries.map((val, index) => <TabSelect title={val[0]} url={val[1]} id={index} index={selectedTab} setIndex={setSelectedTab} key={index}/>)}

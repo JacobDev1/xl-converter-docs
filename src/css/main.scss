@@ -108,7 +108,12 @@ table{
     width: 300px;
     overflow-y: auto;
     height: 100%;
-    
+
+    margin-top: 30px;
+    @include xl-v{
+        margin-top: 100px;
+    }
+
     display: none;
     @include md{
         display: block;
@@ -117,40 +122,6 @@ table{
 
     @include xl{
         padding-left: 150px;
-    }
-    
-    .logo{
-        padding-left: 40px;
-        
-        display: none;
-        @include md{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        a{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: center;
-            
-        }
-        
-        height: 150px;
-        h2{display: none;}
-        @include xl-v{
-            h2{display: block;}
-            height: 200px;
-            margin-top: 20px;
-        }
-    
-        img{
-            width: 105px;
-            height: 100%;   // Fix for Firefox
-            display: block;
-        }
     }
 
     .navbar{

@@ -1,44 +1,30 @@
-import Output from "../assets/xl_converter_output.webp";
+import output from "../assets/xl_converter_output.webp";
 import SmallestLossless from "../assets/xl_converter_smallest_lossless.webp";
-import Formats from "../assets/xl-converter_formats.webp";
+import formats from "../assets/xl-converter_formats.webp";
 
-export default function Converting(){
+export default function Formats(){
     return(<div>
-        <h1>Converting</h1>
-        <p>Conversion is configured in the <b>Output tab</b>.</p>
-        <img src={Output} />
-
-        <h2>Save To</h2>
-        <h3>Source Folder</h3>
-        <p>Each image will be saved in the same folder as its source.</p>
-        <h3>Custom</h3>
-        <p>All images will be saved to that particular folder. If a folder doesn't exist, it will be created.</p>
-        <p>Copy and paste a path or click on the button with 3 dots to use a dialog.</p>
-        <p>There are two types of paths:</p>
-        <ul>
-            <li>Absolute path (e.g. <code>C:/Images/Converted</code>)</li>
-            <li>Relative path (e.g. <code>Converted</code>) - saves to a folder of that name next source image</li>
-        </ul>
+        <h1>Formats</h1>
+        <img src={output} />
 
         <h2>Formats - Introduction</h2>
-        <p>You should understand the difference between the two types of compression first.</p>
+        <p>There are two types of compression:</p>
         <ul>
-            <li>Lossy - file size shrinks along with the quality.</li>
-            <li>Lossless - file size can shrink, but the quality stays the same.</li>
+            <li>Lossy - file size shrinks along with the quality</li>
+            <li>Lossless - file size can shrink, but the quality stays the same</li>
         </ul>
-        <p>Modern formats offer better efficiency (i.e. smaller file size). No single format is good at everything.</p>
         
         <h2>Formats - Overview</h2>
-        <img src={Formats} />
+        <img src={formats} />
         <p>Great quality at a small size and but not widely adopted and slow to convert.</p>
         <ul>
             <li>JPEG XL - great for both lossy and lossless</li>
-            <li>AVIF - as good as JPEG XL at lossy.</li>
+            <li>AVIF - as good as JPEG XL at lossy</li>
         </ul>
 
         <p>Web standard, fast to convert and mostly supported.</p>
         <ul>
-            <li>WEBP - a better replacement for JPG and PNG. Lossless mode works great and lossy is decent.</li>
+            <li>WEBP - a better replacement for JPG and PNG. Lossless mode works great and lossy is still decent.</li>
         </ul>
 
         <p>Large size, but compatible with everything.</p>
@@ -65,7 +51,6 @@ export default function Converting(){
             </li>
         </ul>
         <h3>AVIF</h3>
-        <p>The quality goes from 0 - 63 as all video codecs do.</p>
         <ul>
             <li>Constant Quality - lower is better quality and bigger size
                 <ul>
@@ -111,28 +96,6 @@ export default function Converting(){
             <li>PNG - very simple images</li>
         </ul>
         <p>JPEG XL automatically appends JPG reconstruction data in this mode.</p>
-
-        <h3>JPG Reconstruction</h3>
-        <p>It allows you to:</p>
-        <ul>
-            <li>Convert existing JPG to JPEG XL losslessly (lowers size by 20% - 30%)</li>
-            <li>Reconstruct the orignal JPG from JPEG XL</li>
-        </ul>
-
-        <p>How to use it:</p>
-        <ul>
-            <li>Select JPEG XL format</li>
-            <li>Check <b>lossless</b></li>
-            <li>Reconstruction data will be added to the generated JXL</li>
-        </ul>
-        <p>Note: the input file has to be a JPG, but its aliases (JPEG, JFIF...) are also supported.</p>
-
-        <p>How to reverse it:</p>
-        <ul>
-            <li>Select PNG format</li>
-            <li>Check <b>Reconstruct JPG from JPEG XL</b></li>
-            <li>A JPG will be generated instead of a PNG, If reconstruction data is found</li>
-        </ul>
 
         <h2>JPEG XL vs AVIF</h2>
 
