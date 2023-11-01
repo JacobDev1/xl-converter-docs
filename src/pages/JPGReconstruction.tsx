@@ -25,5 +25,8 @@ export default function JPGReconstruction(){
             <li>Check <b>Reconstruct JPG from JPEG XL</b></li>
             <li>A JPG will be generated instead of a PNG, If reconstruction data is found</li>
         </ul>
+
+        <h2>When To Use It?</h2>
+        <p>Use this method when your JPGs are already low quality or you don't want any more compression artifacts.</p>
     </>);
 }

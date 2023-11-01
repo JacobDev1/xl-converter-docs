@@ -38,14 +38,14 @@ export default function Formats(){
         <ul>
             <li>Quality</li>
             <ul>
-                <li>90 - great</li>
-                <li>80 - a good compromise between size and quality</li>
+                <li>90 - very high</li>
+                <li>80 - high quality and reasonable size</li>
                 <li>60 - space saving sweet-spot</li>
             </ul>
             <li>Effort - higher is better
                 <ul>
                     <li>7 - regular speed and good quality</li>
-                    <li>9 - slow speed, better quality, and possibly smaller file size</li>
+                    <li>9 - slow speed, better quality, and sometimes smaller file size</li>
                     <li>Intelligent Effort - chooses the appropriate effort for the image type and settings. It prioritizes smaller file size, but often ends up also improving the quality.</li>
                 </ul>
             </li>
@@ -54,7 +54,7 @@ export default function Formats(){
         <ul>
             <li>Constant Quality - lower is better quality and bigger size
                 <ul>
-                    <li>20 - a good compromise between size and quality</li>
+                    <li>20 - high quality and reasonable size</li>
                     <li>30 - space saving sweet-spot</li>
                     <li>40 - reasonable limit for space-saving (looks way worse than 30)</li>
                     <li>50 - very low quality</li>
