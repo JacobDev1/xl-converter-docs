@@ -1,0 +1,119 @@
+@import "variables.scss";
+
+.navigation{
+    width: 300px;
+    overflow-y: auto;
+    height: 100%;
+
+    margin-top: 30px;
+    @include xl-v{
+        margin-top: 100px;
+    }
+
+    display: none;
+    @include md{
+        display: block;
+        position: fixed;
+    }
+
+    @include xl{
+        padding-left: 150px;
+    }
+
+    .navbar{
+        padding-left: 40px;
+        padding-right: 40px;
+
+        button{
+            padding: 10px;
+            @include xl-v{
+                padding: 13px 0px;
+            }
+
+            display: flex;
+            white-space: nowrap;
+            align-items: flex-start;
+            width: 100%;
+            font-size: 22px;
+            font-weight: 500;
+            cursor: pointer;
+            border: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .active{
+            color: $primary;
+        }
+        .donate-btn{
+            border: 2px solid $primary;
+            padding: 10px 25px 10px 25px;
+            width: auto;
+            margin-top: 30px;
+
+            &:hover{
+                filter: drop-shadow(0 0 2em rgba($primary, .8));
+                text-decoration: none;
+            }
+        }
+    }
+
+    a{
+        color: $gray-light;
+        display: block;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    footer{
+        display: none;
+        
+        @include md{
+            display: block;
+        }
+
+        color: $gray-dull-2;
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        margin-top: 20px;
+        
+        a{
+            color: $gray-light;
+            display: inline;
+        }
+    }
+}
+
+.navigation-mobile{
+    display: flex;
+    @include md{
+        display: none;
+    }
+
+    // justify-content: center;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-width: 100%;
+    
+    select{
+        // width: 80%;
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 20px;
+    }
+}

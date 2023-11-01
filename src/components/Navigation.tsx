@@ -4,6 +4,8 @@ import { useState } from "react";
 import Footer from "./Footer";
 import TabSelect from "./TabSelect";
 
+import "../css/navigation.scss";
+
 export default function Navigation({menuEntries}:{menuEntries: Array<Array<string | string>>}){
     const [selectedTab, setSelectedTab] = useState(getCurrentIndex());
     const navigate = useNavigate();

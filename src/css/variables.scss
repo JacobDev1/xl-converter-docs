@@ -1,11 +1,14 @@
+// Colors
 $primary: #F18000;
-// $bg: hsl(225, 6%, 13%);
 $bg: hsl(216, 60%, 6%);
+// $bg: hsl(225, 6%, 13%);
 // $bg: hsl(29, 100%, 20%);
 $gray-light: #e1e5e9;
 $gray-dull: hsl(220, 2%, 25%);
 $gray-dull-2: hsl(215, 2%, 50%);
 
+
+// Fonts
 $font-main: 'Ubuntu', sans-serif;
 @font-face{
     font-family: 'Ubuntu', sans-serif;
@@ -31,37 +34,38 @@ $font-monospace: 'Ubuntu Mono', monospace;
     src: url("../fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf") format("truetype");
 }
 
+// Breakpoints (width)
+$screen-sm-w: 576px;      // Mobile
+$screen-md-w: 768px;      // Tablet
+$screen-lg-w: 992px;      // Laptop
+$screen-xl-w: 1200px;     // Desktop
 
-$screen-sm-min: 576px;
-$screen-md-min: 768px;
-$screen-lg-min: 992px;
-$screen-xl-min: 1200px;
+// Breakpoints (height)
+$screen-xl-h: 896px;        // Full HD Desktop
 
-$screen-v-xl: 896px;
-
-@mixin sm{
-    @media(min-width: #{$screen-sm-min}){
+@mixin m{
+    @media(min-width: #{$screen-sm-w}){
         @content;
     }
 }
 @mixin md{
-    @media(min-width: #{$screen-md-min}){
+    @media(min-width: #{$screen-md-w}){
         @content;
     }
 }
 @mixin lg{
-    @media(min-width: #{$screen-lg-min}){
+    @media(min-width: #{$screen-lg-w}){
         @content;
     }
 }
 @mixin xl{
-    @media(min-width: #{$screen-xl-min}){
+    @media(min-width: #{$screen-xl-w}){
         @content;
     }
 }
 
 @mixin xl-v{
-    @media(min-height: #{$screen-v-xl}){
+    @media(min-height: #{$screen-xl-h}){
         @content;
     }
 }
