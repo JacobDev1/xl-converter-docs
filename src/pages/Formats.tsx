@@ -70,7 +70,7 @@ export default function Formats(){
       
         <h3>WEBP</h3>
         <ul>
-            <li>Lossy
+            <li>Quality
                 <ul>
                     <li>90 - great quality, but large size</li>
                     <li>80 - good compromise between quality and size</li>
