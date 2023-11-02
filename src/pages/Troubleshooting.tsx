@@ -6,6 +6,9 @@ export default function Troubleshooting(){
 
         <h2>Technical Supports</h2>
         <p>Technical support is paid and available via <a href="https://www.patreon.com/codepoems" target="_blank">Patreon</a>.</p>
+        
+        <h2>VCOMP140.DLL was not found</h2>
+        <p>Install <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">Visual C++ Redistributables 2015 - 2022</a>. This is needed for ImageMagick to work.</p>
 
         <h2>Doesn't Launch</h2>
         <p>If the program won't launch, delete the following folder.</p>
