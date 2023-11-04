@@ -15,8 +15,8 @@ export default function FAQ(){
         <ul>
             <li>System:
                 <ul>
-                    <li>Windows 10 (1809 or later)</li>
-                    <li>Linux (kernel 5.15 or later)</li>
+                    <li>Windows 10 64-bit (1809 or later)</li>
+                    <li>Linux 64-bit (kernel 5.15 or later)</li>
                 </ul>
             </li>
             <li>Processor: a quad-core made in the last decade</li>
