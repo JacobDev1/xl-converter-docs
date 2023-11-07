@@ -16,6 +16,5 @@ export default function Troubleshooting(){
             <li>Windows - <code>%localappdata%/xl-converter</code></li>
             <li>Linux - <code>~/.config/xl-converter</code></li>
         </ul>
-        <p>It contains widget states. Updates may break the compatibility.</p>
     </div>);
 }
