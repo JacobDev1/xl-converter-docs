@@ -30,10 +30,6 @@ export default function GettingStarted(){
         </ul>
         <p>A shortcut will be added to both the start menu and the desktop.</p>
 
-        {/* <h3>MacOS</h3>
-        <p>XL Converter is unavailable for MacOS.</p>
-        // Note to self: If you do port it to MacOS, mention [this](https://ardour.org/first_time_macos.html). Apple marks unsigned software as "damaged" and makes the installation process tedious. It's much worse than on Windows. */}
-
         <h2>Image Viewers</h2>
         <p>You will need to install an image viewer with support for AVIF and JPEG XL.</p>
         <h3>Windows</h3>
