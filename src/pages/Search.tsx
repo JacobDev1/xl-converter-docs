@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, To, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { clamp, insertPhrase } from "../components/utils";
 import search_index from "../assets/search_index.json";
 
