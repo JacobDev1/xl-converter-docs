@@ -15,19 +15,19 @@ Please, [donate](https://codepoems.eu/donate) to keep the project alive.
 
 ## Tech Stack
 
-This website uses ReactJS, TypeScript, SASS, SWC and Vite.
+This website uses ReactJS, TypeScript, SASS, SWC and Vite. Search index is generated with Python.
 
 ## Running
 
 ```bash
 npm i
-npm run dev
+make run
 ```
 
 ## Deploying
 
 ```
-npm run build
+make build
 ```
 
 ### Apache

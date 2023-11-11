@@ -14,23 +14,13 @@ import Settings from "./pages/Settings";
 import Metadata from "./pages/Metadata";
 import JPGReconstruction from "./pages/JPGReconstruction";
 import ChoosingOutput from "./pages/ChoosingOutput";
+import Search from "./pages/Search";
 
 import "./css/main.scss";
 
-const entries = [
-    ["Getting Started", "/"],
-    ["Adding Files", "/adding-files"],
-    ["Choosing Output", "/choosing-output"],
-    ["Formats", "/formats"],
-    ["Downscaling", "/downscaling"],
-    ["Shortcuts", "/shortcuts"],
-    ["Metadata", "/metadata"],
-    ["JPG Reconstruction", "/jpg-reconstruction"],
-    ["Settings", "/settings"],
-    ["Troubleshooting", "/troubleshooting"],
-    ["FAQ", "/faq"],
-    ["Supported Formats", "/supported-formats"]
-]
+import page_list from "./pages/page_list.json";
+
+const entries = page_list["entries"];
 
 function App() {
   return (
@@ -51,6 +41,7 @@ function App() {
             <Route path="metadata" element={<Metadata />} />
             <Route path="jpg-reconstruction" element={<JPGReconstruction />} />
             <Route path="choosing-output" element={<ChoosingOutput />} />
+            <Route path="search" element={<Search />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

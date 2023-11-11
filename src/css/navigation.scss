@@ -7,7 +7,7 @@
 
     margin-top: 30px;
     @include xl-v{
-        margin-top: 100px;
+        margin-top: 70px;
     }
 
     display: none;
@@ -38,6 +38,7 @@
             font-weight: 500;
             cursor: pointer;
             border: none;
+            outline: none;
 
             &:hover{
                 text-decoration: underline;
@@ -94,6 +95,36 @@
             display: inline;
         }
     }
+
+
+    .search{
+        display: flex;
+        margin-bottom: 20px;
+        padding-left: 40px; 
+
+        input{
+            background-color: none;
+            outline: none;
+            border: solid 2px $gray-dull;
+            padding: 5px 10px;
+            
+            font-size: 16px;
+            max-width: 80%;
+        }
+        
+        input:focus, input:hover, button:hover{
+            border: solid 2px $gray-light;
+        }
+        
+        button{
+            background-color: none;
+            outline: none;
+            border: solid 2px $gray-dull;
+            padding: 6px 10px;
+        }
+    }
+
+
 }
 
 .navigation-mobile{
