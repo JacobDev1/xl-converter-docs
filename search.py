@@ -14,10 +14,11 @@ class Parser(HTMLParser):
     def handle_data(self, data):
         if not data.isspace():
             data_cleaned = " ".join(data.split())   # Remove multiple whitespaces
-            if any(n in data for n in ["export default function", "{' / '}"]):
+            if any(n in data for n in ["export default function", "{' / '}", f");{chr(10)}"]):
                 return
-            
+
             # print(f"\"{data_cleaned}\"")
+
             self.data += data_cleaned + " "
 
 def parseJSX(jsx):
