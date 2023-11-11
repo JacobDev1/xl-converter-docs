@@ -25,6 +25,7 @@ export default function Navigation({menuEntries}:{menuEntries: Array<Array<strin
     
     function handleSearchSubmit(e: any){
         e.preventDefault();
+        if(e.target.phrase.value.replace(/ /g, "") == ""){return;}  // Prevent empty search
         navigate(`/search?q=${e.target.phrase.value}`);
     }
 
