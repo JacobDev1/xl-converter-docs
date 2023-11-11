@@ -1,9 +1,13 @@
-.PHONY: build run
+.PHONY: build run index
 
 build:
-	python3 search.py
 	npm run build
 
 run:
-	python3 search.py
 	npm run dev
+
+index:
+	python3 search_index.py
+
+kill-firefox:
+	pkill firefox

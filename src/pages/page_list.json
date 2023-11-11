@@ -12,19 +12,5 @@
         ["Troubleshooting", "/troubleshooting"],
         ["FAQ", "/faq"],
         ["Supported Formats", "/supported-formats"]  
-    ],
-    "files": {
-        "Getting Started": "GettingStarted.tsx",
-        "Adding Files": "AddingFiles.tsx",
-        "Choosing Output": "ChoosingOutput.tsx",
-        "Formats": "Formats.tsx",
-        "Downscaling": "Downscaling.tsx",
-        "Shortcuts": "Shortcuts.tsx",
-        "Metadata": "Metadata.tsx",
-        "JPG Reconstruction": "JPGReconstruction.tsx",
-        "Settings": "Settings.tsx",
-        "Troubleshooting": "Troubleshooting.tsx",
-        "FAQ": "FAQ.tsx",
-        "Supported Formats": "SupportedFormats.tsx"
-    }
+    ]
 }
