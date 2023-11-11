@@ -25,7 +25,7 @@ export default function Navigation({menuEntries}:{menuEntries: Array<Array<strin
     
     function handleSearchSubmit(e: any){
         e.preventDefault();
-        navigate(`/search?q=${e.target.phrase.value.toLowerCase()}`);
+        navigate(`/search?q=${e.target.phrase.value}`);
     }
 
     return(<>

@@ -24,7 +24,7 @@ export default function Search(){
         }
 
         let new_content = content.substring(from, to);
-        const new_index = new_content.toLowerCase().indexOf(phrase);
+        const new_index = new_content.toLowerCase().indexOf(phrase.toLowerCase());
 
         // Mark searched phrase in bold
         new_content = insertPhrase(new_content, new_index, phrase ,`<b class="highlight">${phrase}</b>`);
@@ -33,15 +33,16 @@ export default function Search(){
     }
 
     useEffect(() => {
-        let phrase = searchParams.get("q") as string;   // Already lower case
+        let phrase = searchParams.get("q") as string;
 
         let new_entries: string[][] = [];
 
         for(let i of search_index){
-            const idx = i.content.toLowerCase().indexOf(phrase);
+            const idx = i.content.toLowerCase().indexOf(phrase.toLowerCase());
 
             if(idx != -1){
-                const entry = [i.title, getDescription(i.content, phrase, idx), i.link];
+                const original_phrase = i.content.substring(idx, idx + phrase.length);  // So the original letter case can be preserved
+                const entry = [i.title, getDescription(i.content, original_phrase, idx), i.link];
                 new_entries.push(entry);
             }
         }
