@@ -38,7 +38,7 @@ export default function Downscaling(){
 
         <h2>Notes</h2>
         <ul>
-            <li>Intelliget Effort (in JPEG XL) is compatible with all downscaling types</li>
+            <li>Intelligent Effort (in JPEG XL) is compatible with all downscaling types</li>
             <li>Downscaling is unavailable for animated images and in the "Smallest Lossless" mode</li>
         </ul>
     </div>);

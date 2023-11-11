@@ -29,7 +29,7 @@ export default function FAQ(){
         </ul>
 
         <h2>What are the "Intelligent Features"?</h2>
-        <p>They are my original concept, namely:</p>
+        <p>They are my original concepts, namely:</p>
         <ul>
             <li>Dynamic Downscaling</li>
             <li>Intelligent Effort</li>

@@ -7,7 +7,7 @@ export default function JPGReconstruction(){
         <p>This feature allows you to:</p>
         <ul>
             <li>Convert existing JPG to JPEG XL losslessly (lowers size by 15% - 25%)</li>
-            <li>Reconstruct the orignal JPG from JPEG XL</li>
+            <li>Reconstruct the original JPG from JPEG XL</li>
         </ul>
 
         <h2>Encoding Reconstruction Data</h2>

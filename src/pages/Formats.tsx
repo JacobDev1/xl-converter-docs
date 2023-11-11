@@ -16,13 +16,13 @@ export default function Formats(){
         
         <h2>Formats - Overview</h2>
         <img src={formats} />
-        <p>Great quality at a small size and but not widely adopted and slow to convert.</p>
+        <p>Great quality at a small size but not widely adopted and slow to convert.</p>
         <ul>
             <li>JPEG XL - great for both lossy and lossless</li>
             <li>AVIF - as good as JPEG XL at lossy</li>
         </ul>
 
-        <p>Web standard, fast to convert and mostly supported.</p>
+        <p>Web standard, fast to convert, and mostly supported.</p>
         <ul>
             <li>WEBP - a better replacement for JPG and PNG. Lossless mode works great and lossy is still decent.</li>
         </ul>
@@ -82,7 +82,7 @@ export default function Formats(){
         <h2>Formats - Lossless</h2>
         <h3>Manual</h3>
         <p>Select <b>JPEG XL, WEBP or PNG</b> then check <b>Lossless</b>.</p>
-        <p>The alternative, <b>Lossless (only If smaller)</b> converts to both lossy and lossless then picks the smaller one. It's especially useful with WEBP</p>
+        <p>The alternative, <b>Lossless (only If smaller)</b> converts to both lossy and lossless, then picks the smaller one. It's especially useful with WEBP</p>
 
         <h3>Smallest Lossless</h3>
         <p>XL Converter features <b>Smallest Lossless</b> mode which converts to multiple formats then picks the smallest one.</p>
