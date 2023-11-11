@@ -4,7 +4,7 @@ import { clamp, insertPhrase } from "../components/utils";
 import search_index from "../assets/search_index.json";
 
 export default function Search(){
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams] = useSearchParams();
     const [entries, setEntries] = useState<string[][]>([]);
 
     function getDescription(content: string, phrase: string, phrase_idx: number){
