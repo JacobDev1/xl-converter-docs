@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import Footer from "./Footer";
 import TabSelect from "./TabSelect";
+import SearchBar from "./SearchBar";
 
 import "../css/navigation.scss";
 
@@ -23,20 +24,11 @@ export default function Navigation({menuEntries}:{menuEntries: Array<Array<strin
         navigate(target);
     }
     
-    function handleSearchSubmit(e: any){
-        e.preventDefault();
-        if(e.target.phrase.value.replace(/ /g, "") == ""){return;}  // Prevent empty search
-        navigate(`/search?q=${e.target.phrase.value}`);
-    }
-
     return(<>
         {/* Desktop Menu */}
         <div className="navigation">
 
-            <form className="search" onSubmit={(e) => handleSearchSubmit(e)}>
-                <input type="text" name="phrase" placeholder="Search..."/>
-                {/* <button type="submit">Search</button> */}
-            </form>
+            <SearchBar navigate={navigate}/>
 
             <div className="navbar">
                 {menuEntries.map((val, index) => <TabSelect title={val[0]} url={val[1]} id={index} index={selectedTab} setIndex={setSelectedTab} key={index}/>)}
