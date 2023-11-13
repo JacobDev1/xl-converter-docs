@@ -15,9 +15,21 @@ Please, [donate](https://codepoems.eu/donate) to keep the project alive.
 
 ## Tech Stack
 
-This website uses ReactJS, TypeScript, SASS, SWC and Vite. Search index is generated with Python and Selenium. Instructions are written for Ubuntu / Debian.
+This website uses ReactJS, TypeScript, SASS, SWC and Vite.
+
+Search index is generated with Python and Selenium.
+
+Instructions are written for Ubuntu / Debian.
 
 ## Running
+
+Install [nvm](https://github.com/nvm-sh/nvm)
+
+Use latest NodeJS LTS
+
+```bash
+nvm install --lts
+```
 
 ```bash
 npm i
