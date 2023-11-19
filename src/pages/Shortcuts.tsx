@@ -11,6 +11,9 @@ export default function Shortcuts(){
             <li>Ctrl + A - select all</li>
             <li>Ctrl + Shift + X - clear list</li>
             <li>Delete - delete selected entries</li>
+            <li>Up or Down - navigate up or down the list</li>
+            <li>Home - move to the top of the list</li>
+            <li>End - move to the bottom of the list</li>
         </ul>
     </div>);
 }
