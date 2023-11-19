@@ -1,11 +1,18 @@
 import { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { clamp, insertPhrase } from "../components/utils";
+import { clamp } from "../components/utils";
 import search_index from "../assets/search_index.json";
+import parse from "html-react-parser";
 
 export default function Search(){
     const [searchParams] = useSearchParams();
     const [entries, setEntries] = useState<string[][]>([]);
+
+    function insertPhrase(content: string, index: number, phrase_org: string, phrase_rep: string){
+        const left = content.substring(0, index);
+        const right = content.substring(index + phrase_org.length, content.length);
+        return left + phrase_rep + right;
+    }
 
     function getDescription(content: string, phrase: string, phrase_idx: number){
         const content_len = content.length;
@@ -50,12 +57,17 @@ export default function Search(){
     }, [searchParams]);
 
     return(<div className="search">
-        {entries.length > 0 ? <h1>Results for "{searchParams.get("q")}"</h1> : <h1>No results for "{searchParams.get("q")}"</h1>}
-        {entries.length > 0 && entries.map((entry) => (<div key={entry[1]}>
+        {entries.length > 0 ? (
+                <h1>Results for "{searchParams.get("q")}"</h1>
+            ) : (
+                <h1>No results for "{searchParams.get("q")}"</h1>
+            )}
+        {entries.length > 0 && 
+            entries.map((entry) => (<div key={entry[1]}>
                 <Link to={entry[2]}>
                     <h2>{entry[0]}</h2>
                 </Link>
-            <p dangerouslySetInnerHTML={{__html: entry[1]}}></p>
+                <p>{parse(entry[1])}</p>
         </div>
         ))}
     </div>);
