@@ -9,9 +9,7 @@ export default function Search(){
     const [entries, setEntries] = useState<string[][]>([]);
 
     function insertPhrase(content: string, index: number, phrase_org: string, phrase_rep: string){
-        const left = content.substring(0, index);
-        const right = content.substring(index + phrase_org.length, content.length);
-        return left + phrase_rep + right;
+        return content.substring(0, index) + phrase_rep + content.substring(index + phrase_org.length);
     }
 
     function getDescription(content: string, phrase: string, phrase_idx: number){
@@ -41,18 +39,14 @@ export default function Search(){
 
     useEffect(() => {
         let phrase = searchParams.get("q") as string;
+        let new_entries = search_index
+            .filter((i) => i.content.toLowerCase().includes(phrase.toLowerCase()))
+            .map((i) => {
+                const idx = i.content.toLowerCase().indexOf(phrase.toLowerCase());
+                const org_phrase = i.content.substring(idx, idx + phrase.length);
+                return [i.title, getDescription(i.content, org_phrase, idx), i.link];
+            });
 
-        let new_entries: string[][] = [];
-
-        for(let i of search_index){
-            const idx = i.content.toLowerCase().indexOf(phrase.toLowerCase());
-
-            if(idx != -1){
-                const original_phrase = i.content.substring(idx, idx + phrase.length);  // The original letter case should be preserved
-                const entry = [i.title, getDescription(i.content, original_phrase, idx), i.link];
-                new_entries.push(entry);
-            }
-        }
         setEntries(new_entries);
     }, [searchParams]);
 
