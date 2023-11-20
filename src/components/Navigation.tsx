@@ -1,5 +1,5 @@
 import { Outlet, To, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Footer from "./Footer";
 import TabSelect from "./TabSelect";
@@ -7,9 +7,17 @@ import SearchBar from "./SearchBar";
 
 import "../css/navigation.scss";
 
-export default function Navigation({menuEntries}:{menuEntries: Array<Array<string | string>>}){
-    const [selectedTab, setSelectedTab] = useState(getCurrentIndex());
+interface NavigationProps{
+    menuEntries: Array<Array<string | string>>;
+}
+
+export default function Navigation({menuEntries}: NavigationProps){
+    const [selectedTab, setSelectedTab] = useState<number>(0);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        setSelectedTab(getCurrentIndex());
+    }, [menuEntries]);
 
     function getCurrentIndex(){ // For entering website from a direct link
         for(let i = 0; i < menuEntries.length; i++){
@@ -18,10 +26,6 @@ export default function Navigation({menuEntries}:{menuEntries: Array<Array<strin
             }    
         }
         return 0;
-    }
-
-    function handleOnChangeMobile(target: To){
-        navigate(target);
     }
     
     return(<>
@@ -41,7 +45,7 @@ export default function Navigation({menuEntries}:{menuEntries: Array<Array<strin
 
         {/* Mobile Menu */}
         <div className="navigation-mobile">
-            <select onChange={e => handleOnChangeMobile(e.target.value)} defaultValue={menuEntries[getCurrentIndex()][1]}>
+            <select onChange={e => navigate(e.target.value)} value={menuEntries[getCurrentIndex()][1]}>
                 {menuEntries.map((val, idx) => (
                     <option value={val[1]} key={idx}>{val[0]}</option>
                 ))}
