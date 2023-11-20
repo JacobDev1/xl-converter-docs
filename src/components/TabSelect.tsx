@@ -1,6 +1,14 @@
 import { Link, To } from "react-router-dom";
 
-export default function Tab({title, url, id, index, setIndex}: {title: String, url: To, id: number, index: number, setIndex: any}){
+interface TabProps{
+    title: string,
+    url: To,
+    id: number,
+    index: number,
+    setIndex: React.Dispatch<React.SetStateAction<number>>;
+}
+
+export default function Tab({title, url, id, index, setIndex}: TabProps){
     function handleIndexChange(){
         setIndex(id);
     }
