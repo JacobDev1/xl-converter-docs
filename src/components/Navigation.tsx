@@ -1,4 +1,4 @@
-import { Outlet, To, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import Footer from "./Footer";
@@ -35,7 +35,7 @@ export default function Navigation({menuEntries}: NavigationProps){
             <SearchBar navigate={navigate}/>
 
             <div className="navbar">
-                {menuEntries.map((val, index) => <TabSelect title={val[0]} url={val[1]} id={index} index={selectedTab} setIndex={setSelectedTab} key={index}/>)}
+                {menuEntries.map((entry, index) => <TabSelect title={entry[0]} url={entry[1]} index={index} selectedTab={selectedTab} setSelectedTab={setSelectedTab} key={index}/>)}
 
                 <Footer />
                 <button className="donate-btn"><a href="https://codepoems.eu/donate" target="_blank">Donate</a></button>

@@ -3,19 +3,15 @@ import { Link, To } from "react-router-dom";
 interface TabProps{
     title: string,
     url: To,
-    id: number,
     index: number,
-    setIndex: React.Dispatch<React.SetStateAction<number>>;
+    selectedTab: number,
+    setSelectedTab: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function Tab({title, url, id, index, setIndex}: TabProps){
-    function handleIndexChange(){
-        setIndex(id);
-    }
-
+export default function Tab({title, url, index, selectedTab, setSelectedTab}: TabProps){
     return(
         <Link to={url}>
-            <button onClick={handleIndexChange} className={index === id ? "active" : ""}>
+            <button onClick={() => setSelectedTab(index)} className={selectedTab === index ? "active" : ""}>
                 {title}
             </button>
     </Link>);
