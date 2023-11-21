@@ -5,7 +5,7 @@ import json, os
 
 # Config
 URL = "localhost:5173"
-PAGE_LIST_PATH = os.path.join(".", "src", "pages", "page_list.json")
+PAGE_LIST_PATH = os.path.join(".", "src", "pages", "menuEntries.json")
 OUTPUT_PATH = os.path.join(".", "src", "assets", "search_index.json")
 
 # Code
@@ -52,11 +52,11 @@ def saveJSONtoFile(_json, path):
 if __name__ == "__main__":
     page_list = loadFileAsJSON(PAGE_LIST_PATH)
     generator = GenerateSearchIndex(URL)
-    pages_len = len(page_list['entries'])
+    pages_len = len(page_list)
     
-    for idx, page in enumerate(page_list["entries"]):
+    for idx, page in enumerate(page_list):
         generator.feed(page[0], page[1])
-        print(f"[Generating] {idx+1} out of {len(page_list['entries'])} pages")
+        print(f"[Generating] {idx+1} out of {len(page_list)} pages")
 
     saveJSONtoFile(generator.getOutput(), OUTPUT_PATH)
     generator.close()
