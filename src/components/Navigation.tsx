@@ -1,33 +1,21 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 import Footer from "./Footer";
 import TabSelect from "./TabSelect";
 import SearchBar from "./SearchBar";
+import MobileMenu from "./MobileMenu";
 
 import "../css/navigation.scss";
 
 interface NavigationProps{
     menuEntries: Array<Array<string | string>>;
+    selectedTab: number;
+    setSelectedTab: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function Navigation({menuEntries}: NavigationProps){
-    const [selectedTab, setSelectedTab] = useState<number>(0);
+export default function Navigation({menuEntries, selectedTab, setSelectedTab}: NavigationProps){
     const navigate = useNavigate();
 
-    useEffect(() => {
-        setSelectedTab(getCurrentIndex());
-    }, [menuEntries]);
-
-    function getCurrentIndex(){ // For entering website from a direct link
-        for(let i = 0; i < menuEntries.length; i++){
-            if(menuEntries[i][1].includes(window.location.pathname)){
-                return i;
-            }    
-        }
-        return 0;
-    }
-    
     return(<>
         {/* Desktop Menu */}
         <div className="navigation">
@@ -44,13 +32,7 @@ export default function Navigation({menuEntries}: NavigationProps){
         </div>
 
         {/* Mobile Menu */}
-        <div className="navigation-mobile">
-            <select onChange={e => navigate(e.target.value)} value={menuEntries[getCurrentIndex()][1]}>
-                {menuEntries.map((val, idx) => (
-                    <option value={val[1]} key={idx}>{val[0]}</option>
-                ))}
-            </select>
-        </div>
+        <MobileMenu menuEntries={menuEntries} selectedTab={selectedTab} setSelectedTab={setSelectedTab} navigate={navigate}/>
 
         {/* Content */}
         <div className="content">

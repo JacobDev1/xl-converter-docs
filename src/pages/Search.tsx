@@ -4,7 +4,11 @@ import { clamp } from "../components/utils";
 import search_index from "../assets/search_index.json";
 import parse from "html-react-parser";
 
-export default function Search(){
+interface SearchProps{
+    updateSelectedTab: (location: string) => void;
+}
+
+export default function Search({updateSelectedTab}: SearchProps){
     const [searchParams] = useSearchParams();
     const [entries, setEntries] = useState<string[][]>([]);
 
@@ -59,7 +63,7 @@ export default function Search(){
         {entries.length > 0 && 
             entries.map((entry) => (<div key={entry[1]}>
                 <Link to={entry[2]}>
-                    <h2>{entry[0]}</h2>
+                    <h2 onClick={() => updateSelectedTab(entry[2])}>{entry[0]}</h2>
                 </Link>
                 <p>{parse(entry[1])}</p>
         </div>
