@@ -1,10 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom";
-
-import Footer from "./Footer";
-import TabSelect from "./TabSelect";
-import SearchBar from "./SearchBar";
 import MobileMenu from "./MobileMenu";
-
+import DesktopMenu from "./DesktopMenu";
 import "../css/navigation.scss";
 
 interface NavigationProps{
@@ -18,18 +14,7 @@ export default function Navigation({menuEntries, selectedTab, setSelectedTab}: N
 
     return(<>
         {/* Desktop Menu */}
-        <div className="navigation">
-
-            <SearchBar navigate={navigate}/>
-
-            <div className="navbar">
-                {menuEntries.map((entry, index) => <TabSelect title={entry[0]} url={entry[1]} index={index} selectedTab={selectedTab} setSelectedTab={setSelectedTab} key={index}/>)}
-
-                <Footer />
-                <button className="donate-btn"><a href="https://codepoems.eu/donate" target="_blank">Donate</a></button>
-            </div>
-
-        </div>
+        <DesktopMenu menuEntries={menuEntries} selectedTab={selectedTab} setSelectedTab={setSelectedTab} navigate={navigate} />
 
         {/* Mobile Menu */}
         <MobileMenu menuEntries={menuEntries} selectedTab={selectedTab} setSelectedTab={setSelectedTab} navigate={navigate}/>

@@ -1,6 +1,6 @@
 import { Link, To } from "react-router-dom";
 
-interface TabProps{
+interface TabSelectProps{
     title: string,
     url: To,
     index: number,
@@ -8,7 +8,7 @@ interface TabProps{
     setSelectedTab: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function Tab({title, url, index, selectedTab, setSelectedTab}: TabProps){
+export default function TabSelect({title, url, index, selectedTab, setSelectedTab}: TabSelectProps){
     return(
         <Link to={url}>
             <button onClick={() => setSelectedTab(index)} className={selectedTab === index ? "active" : ""}>
