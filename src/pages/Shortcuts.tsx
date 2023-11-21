@@ -15,5 +15,6 @@ export default function Shortcuts(){
             <li>Home - move to the top of the list</li>
             <li>End - move to the bottom of the list</li>
         </ul>
+        <p>Select Range - click an item, hold shift then click on another.</p>
     </div>);
 }
