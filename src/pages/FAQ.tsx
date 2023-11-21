@@ -31,7 +31,7 @@ export default function FAQ(){
         <h2>(Linux) What is the difference between "Installer" and "AppImage"?</h2>
         <ul>
             <li>Installer (recommended) - launches faster, sets up permissions and adds shortcuts</li>
-            <li>AppImage - takes up less space, but the custom icon may not work</li>
+            <li>AppImage - takes up less space</li>
         </ul>
 
         <h2>What are the "Intelligent Features"?</h2>
