@@ -27,6 +27,6 @@ export default function JPGReconstruction(){
         </ul>
 
         <h2>When To Use It?</h2>
-        <p>Use this method when your JPGs are already low quality or you don't want any more compression artifacts.</p>
+        <p>Use this method when you want to keep the original file intact. Regular (lossy) encoding does offer smaller files.</p>
     </>);
 }
