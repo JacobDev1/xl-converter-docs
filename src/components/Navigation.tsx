@@ -14,10 +14,20 @@ export default function Navigation({menuEntries, selectedTab, setSelectedTab}: N
 
     return(<>
         {/* Desktop Menu */}
-        <DesktopMenu menuEntries={menuEntries} selectedTab={selectedTab} setSelectedTab={setSelectedTab} navigate={navigate} />
+        <DesktopMenu
+            menuEntries={menuEntries}
+            selectedTab={selectedTab}
+            setSelectedTab={setSelectedTab}
+            navigate={navigate}
+        />
 
         {/* Mobile Menu */}
-        <MobileMenu menuEntries={menuEntries} selectedTab={selectedTab} setSelectedTab={setSelectedTab} navigate={navigate}/>
+        <MobileMenu
+            menuEntries={menuEntries}
+            selectedTab={selectedTab}
+            setSelectedTab={setSelectedTab}
+            navigate={navigate} 
+        />
 
         {/* Content */}
         <div className="content">
