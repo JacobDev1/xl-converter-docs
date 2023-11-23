@@ -1,4 +1,5 @@
 This project uses the following dependencies
+- html-react-parser (MIT)
 - Ubuntu font - (Ubuntu font license - https://ubuntu.com/legal/font-licence)
 - Ubuntu Mono font - (Ubuntu font license - https://ubuntu.com/legal/font-licence)
 - ReactJS (MIT)
