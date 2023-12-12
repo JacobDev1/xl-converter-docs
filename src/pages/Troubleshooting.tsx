@@ -2,7 +2,11 @@ export default function Troubleshooting(){
     return(<div>
         <h1>Troubleshooting</h1>
         <h2>Bug Reports</h2>
-        <p>Send an email to contact@codepoems.eu</p>
+        <p>You can submit a bug report in 2 ways</p>
+        <ul>
+            <li>[public] - Submit a new <a href="https://github.com/JacobDev1/xl-converter/issues" target="_blank">GitHub Issue</a></li>
+            <li>[private] - Email me at contact@codepoems.eu</li>
+        </ul>
 
         <h2>Technical Supports</h2>
         <p>Direct support from the developer is available via <a href="https://www.patreon.com/codepoems" target="_blank">Patreon</a>.</p>
