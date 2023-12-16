@@ -1,4 +1,3 @@
-import ModifyTab from "../assets/xl_converter_modify_tab.webp";
 import ManualDownscaling from "../assets/xl_converter_manual_downscaling.webp";
 
 export default function Downscaling(){
@@ -7,7 +6,7 @@ export default function Downscaling(){
         <p>Downscaling is available in the <b>Modify tab</b>. All methods maintain <b>the same aspect ratio</b>. They only scale the image down, not up.</p>
         <img src={ManualDownscaling} />
 
-        <h2>Max Resolution</h2>
+        <h2>Resolution</h2>
         <p>Clamps the resolutions to fit in the selected range.</p>
         
         <h2>Percent</h2>
@@ -17,7 +16,7 @@ export default function Downscaling(){
         <h2>Shortest and Longest Side</h2>
         <p>Makes particular side fit under selected size. Helpful with vertical images.</p>
 
-        <h2>Max File Size</h2>
+        <h2>File Size</h2>
         <p>You should pick a different mode whenever possible. This one is very slow.</p>
         <ul>
             <li>File Size (KiB) - maximum allowed size</li>
