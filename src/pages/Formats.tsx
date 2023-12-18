@@ -46,7 +46,7 @@ export default function Formats(){
                 <ul>
                     <li>7 - regular speed and good quality</li>
                     <li>9 - slow speed, better quality, and sometimes smaller file size</li>
-                    <li>Intelligent Effort - chooses the appropriate effort for the image type and settings. It prioritizes smaller file size, but often ends up also improving the quality.</li>
+                    <li>Intelligent Effort - prioritizes smaller file sizes</li>
                 </ul>
             </li>
         </ul>
