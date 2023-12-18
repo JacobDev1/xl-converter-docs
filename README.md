@@ -6,20 +6,7 @@ Hosted [here](https://xl-converter-docs.codepoems.eu).
 
 ![](./screenshots/desktop.webp)
 
-|Laptops|Mobiles|
-|:-:|:-:|
-|![](./screenshots/laptop.webp)|![](./screenshots/mobile.webp)|
-
-
 Please, [donate](https://codepoems.eu/donate) to keep the project alive.
-
-## Tech Stack
-
-This website uses ReactJS, TypeScript, SASS, SWC and Vite.
-
-Search index is generated with Python and Selenium.
-
-Instructions are written for Ubuntu / Debian.
 
 ## Running
 
@@ -38,7 +25,7 @@ make run
 
 ## Generating Search Index
 
-Search index should be re-generated before deployment.
+The search index should be re-generated before deployment.
 
 First, run the project
 
