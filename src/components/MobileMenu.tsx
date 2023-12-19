@@ -16,7 +16,11 @@ export default function MobileMenu({menuEntries, selectedTab, setSelectedTab, na
     return(<div className="navigation-mobile">
         <select
             onChange={e => handleNavigate(e.target.value, e.target.selectedIndex)}
-            value={menuEntries[selectedTab][1]}>
+            value={ 
+                selectedTab >= 0 && selectedTab < menuEntries.length
+                ? menuEntries[selectedTab][1]
+                : menuEntries[0][1]
+                }>
             
             {menuEntries.map(([title, url], idx) => (
                 <option value={url} key={idx}>{title}</option>

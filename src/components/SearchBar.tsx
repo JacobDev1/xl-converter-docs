@@ -2,9 +2,10 @@ import { NavigateFunction } from "react-router";
 
 interface SearchBarProps{
     navigate: NavigateFunction;
+    setSelectedTab: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function SearchBar({navigate}: SearchBarProps){
+export default function SearchBar({navigate, setSelectedTab}: SearchBarProps){
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -13,6 +14,7 @@ export default function SearchBar({navigate}: SearchBarProps){
     
         if (input) {
             navigate(`/search?q=${encodeURIComponent(input)}`);
+            setSelectedTab(-1);
         }    
       };
     

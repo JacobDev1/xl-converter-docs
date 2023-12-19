@@ -14,7 +14,10 @@ interface DesktopMenuProps{
 export default function DesktopMenu({menuEntries, selectedTab, setSelectedTab, navigate}: DesktopMenuProps){
     return(<div className="navigation">
 
-        <SearchBar navigate={navigate}/>
+        <SearchBar
+            navigate={navigate}
+            setSelectedTab={setSelectedTab}
+        />
 
         <div className="navbar">
             {menuEntries.map(([title, url], index) => (
