@@ -24,7 +24,6 @@ export default function Downscaling(){
             <li>Step (%) - value used to progressively shrink an image</li>
         </ul>
         <p><b>Tip: </b>to preserve higher resolution, decrease the quality in the <b>Format Tab</b>.</p>
-        <p>Note: If a converted image is already smaller than the declared file size, no downscaling will occur.</p>
 
         <h2>Resampling Methods</h2>
         <p>You should not change this unless you know a lot about resampling. By default, <b>Lanczos</b> will be used.</p>
