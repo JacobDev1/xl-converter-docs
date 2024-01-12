@@ -47,17 +47,6 @@
         .active{
             color: $primary;
         }
-        .donate-btn{
-            border: 2px solid $primary;
-            padding: 10px 25px 10px 25px;
-            width: auto;
-            margin-top: 30px;
-
-            &:hover{
-                filter: drop-shadow(0 0 2em rgba($primary, .8));
-                text-decoration: none;
-            }
-        }
     }
 
     a{

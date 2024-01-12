@@ -56,12 +56,6 @@ export default function SupportedFormats(){
                     <td>to PNG</td>
                 </tr>
                 <tr>
-                    <td>TIFF</td>
-                    <td>-</td>
-                    <td>Yes</td>
-                    <td>to PNG</td>
-                </tr>
-                <tr>
                     <td>JP2</td>
                     <td>-</td>
                     <td>Yes</td>

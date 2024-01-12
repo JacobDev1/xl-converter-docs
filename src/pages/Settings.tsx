@@ -4,8 +4,9 @@ export default function Settings(){
         <h2>General</h2>
         <ul>
             <li>Dark Theme - the intended look of XL Converter</li>
-            <li>Disable Downscaling on Startup - You will probably forget you have downscaling enabled the next time you turn on the program. This disables it for you.</li>
-            <li>Disable Exception - disable the popups you get when conversion encounters soft errors.</li>
+            <li>Disable Downscaling on Startup - disables downscaling when you when you launch the application.</li>
+            <li>Disable Delete Original on Startup - unchecks delete original when you when you launch the application.</li>
+            <li>Disable Exception Popups - the pop-up displaying errors encountered during conversion will no longer appear.</li>
             <li>Input - Disable Sorting - disables sorting in the <b>Input Tab</b>, has no effect on performance.</li>
         </ul>
 

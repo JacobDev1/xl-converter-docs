@@ -54,10 +54,9 @@ export default function Formats(){
         <ul>
             <li>Constant Quality - lower is better quality and bigger size
                 <ul>
-                    <li>20 - high quality and reasonable size</li>
-                    <li>30 - space saving sweet-spot</li>
-                    <li>40 - reasonable limit for space-saving (looks way worse than 30)</li>
-                    <li>50 - very low quality</li>
+                    <li>70 - high quality and reasonable size</li>
+                    <li>50 - medium quality</li>
+                    <li>30 - bad quality</li>
                 </ul>
             </li>
             <li>Speed - lower is better
@@ -78,6 +77,7 @@ export default function Formats(){
                 </ul>
             </li>
         </ul>
+        <p>The mode (-m) is always set to 6 for better quality and smaller file size.</p>
 
         <h2>Formats - Lossless</h2>
         <h3>Manual</h3>
@@ -97,25 +97,5 @@ export default function Formats(){
         </ul>
         <p>JPEG XL automatically appends JPG reconstruction data in this mode.</p>
 
-        <h2>JPEG XL vs AVIF</h2>
-
-        <p>The visual differences in lossy mode are negligible but one may perform slightly better in a given context.</p>
-        <p>Preferred format:</p>
-        <ul>
-            <li>Text images - JPEG XL</li>
-            <li>Full-page website screenshots - JPEG XL</li>
-            <li>Photographs (high quality) - tie</li>
-            <li>Anime drawings from Pixiv - AVIF</li>
-            <li>Desktop screenshots - AVIF</li>
-            <li>Photographs (low quality) - AVIF</li>
-        </ul>
-        <p>If you're unsure, try out both. These criteria are arbitrary and may not be representative.</p>
-        
-        <p>Technical differences</p>
-        <ul>
-            <li>AVIF is supported by most web browsers and JPEG XL isn't</li>
-            <li>AVIF does not feature (a good) lossless mode</li>
-            <li>AVIF is more secure (lower attack vector, based a video codec)</li>
-        </ul>
     </div>);
 }

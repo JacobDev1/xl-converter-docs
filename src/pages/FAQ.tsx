@@ -1,17 +1,27 @@
 export default function FAQ(){
     return(<div>
         <h1>FAQ</h1>
-        <h2>Is XL Converter free?</h2>
-        <p>Yes, even for commercial use. It's licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GPLv3</a>.</p>
-
-        <h2>How does it make money then?</h2>
-        <p>It doesn't, which is why it could use your <a href="https://codepoems.eu/donate/" target="_blank">donation</a>.</p>
-
-        <h2>Is XL Converter safe?</h2>
-        <p>Of course! The entire source is publicly available. Encoder binaries come either from the official sources or are compiled by myself.</p>
-        <p>You can compile every part of this program yourself. All encoders are standard, which means you can easily swap them.</p>
         
-        <h2>What are the requirements?</h2>
+        <h2>Is XL Converter safe?</h2>
+        <p>Of course! The source is public available (and auditable).</p>
+
+        <h2>What technologies are used?</h2>
+        <ul>
+            <li>JPEG XL - libjxl</li>
+            <li>AVIF - libavif (AOM)</li>
+            <li>JPG, WEBP, Downscaling - ImageMagick</li>
+        </ul>
+        <p><a href="https://github.com/JacobDev1/xl-converter/blob/stable/LICENSE_3RD_PARTY.txt" target="_blank" >Full list</a></p>
+
+        <h2>Does it support high bit depth?</h2>
+        <p>Yes, the limits are</p>
+        <ul>
+            <li>JPEG XL - 32 bit</li>
+            <li>AVIF - 12 bit</li>
+        </ul>
+        <p>The Legacy JPG, WEBP, Smallest Lossless and Downscaling are limited to 8 bit.</p>
+
+        <h2>What are the hardware requirements?</h2>
         <ul>
             <li>System:
                 <ul>
@@ -33,14 +43,5 @@ export default function FAQ(){
             <li>Installer (recommended) - launches faster, sets up permissions, and adds shortcuts</li>
             <li>AppImage - takes up less space</li>
         </ul>
-
-        <h2>What are the "Intelligent Features"?</h2>
-        <p>They are my original concepts, namely:</p>
-        <ul>
-            <li>Dynamic Downscaling</li>
-            <li>Intelligent Effort</li>
-            <li>Smallest Lossless</li>
-        </ul>
-        <p>Each one automates the conversion process in some way - saving you time. XL Converter is the first program to have such features.</p>
     </div>);
 }
