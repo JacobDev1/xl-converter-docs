@@ -5,16 +5,11 @@ export default function GettingStarted(){
         <h1>Getting Started</h1>
         <p>XL Converter is a powerful image converter for the latest formats.</p>
         <img src={Output} />
-        <h2>Downloading XL Converter</h2>
-        <p>There are only 3 official sources you can download it from.</p>
-        <ul>
-            <li><a href="https://www.patreon.com/codepoems" target="_blank">Patreon</a> - support the project while getting the program</li>
-            <li><a href="https://codepoems.eu/xl-converter" target="_blank">The Official Website</a></li>
-            <li><a href="https://github.com/JacobDev1/xl-converter" target="_blank">GitHub</a> - for the tech savvy</li>
-        </ul>
-        <p>You should download XL Converter only from the aforementioned links.</p>
 
         <h2>Installation</h2>
+        <a href="https://codepoems.eu/xl-converter" target="_blank"><button>Download Page</button></a>
+        <p>Only download XL Converter from codepoems.eu.</p>
+
         <h3>Windows</h3>
         <p>Double-click on the downloaded file. You will get a warning, click on</p>
         <ul>

@@ -8,6 +8,28 @@
     color-scheme: dark;
 }
 
+.content{
+    button {
+        cursor: pointer;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $gray-light;
+        min-width: 170px;
+        min-height: 50px;
+    
+        background-color: none;
+        outline: none;
+        border: solid 2px $primary;
+        padding: 6px 10px;
+        &:hover{
+            background-color: $primary;
+            color: $bg;
+        }
+    }
+}
+
+
 a{
     color: $primary;
     text-decoration: none;
