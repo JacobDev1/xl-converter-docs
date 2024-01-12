@@ -1,12 +1,15 @@
 ## XL Converter Documentation
 
-The knowledge base for [XL Converter](https://github.com/JacobDev1/xl-converter) - a powerful image converter I wrote.
+The documentation for [XL Converter](https://github.com/JacobDev1/xl-converter).
 
 Hosted [here](https://xl-converter-docs.codepoems.eu).
 
 ![](./screenshots/desktop.webp)
 
-Please, [donate](https://codepoems.eu/donate) to keep the project alive.
+Features:
+- Search engine
+- Clean design
+- Mobile-friendly
 
 ## Running
 
