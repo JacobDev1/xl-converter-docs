@@ -26,3 +26,4 @@ dist-ssr
 # Misc.
 notes.txt
 env
+coverage
