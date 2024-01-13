@@ -8,4 +8,7 @@ module.exports = {
     collectCoverage: true,
     coveragePathIgnorePatterns: ['/node_modules/'],
     testEnvironment: 'jsdom',
+    moduleNameMapper: {
+        '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
+    }
 };
