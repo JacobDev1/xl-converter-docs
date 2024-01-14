@@ -1,14 +1,19 @@
 import { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { clamp } from "../components/utils";
-import searchIndex from "../assets/search_index.json";
+
 import parse from "html-react-parser";
 
 interface SearchProps{
     updateSelectedTab: (location: string) => void;
+    searchIndex: {
+        title: string;
+        content: string;
+        link: string;
+    }[];
 }
 
-export default function Search({updateSelectedTab}: SearchProps){
+export default function Search({updateSelectedTab, searchIndex}: SearchProps){
     const [searchParams] = useSearchParams();
     const [entries, setEntries] = useState<string[][]>([]);
 
@@ -45,6 +50,8 @@ export default function Search({updateSelectedTab}: SearchProps){
 
     useEffect(() => {
         let phrase = searchParams.get("q") as string;
+        if (!phrase || !phrase.trim()) return;
+        
         let newEntries = searchIndex
             .filter((i) => i.content.toLowerCase().includes(phrase.toLowerCase()))
             .map((i) => {

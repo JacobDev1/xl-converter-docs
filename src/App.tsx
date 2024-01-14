@@ -20,6 +20,7 @@ import Search from "./pages/Search";
 import "./css/main.scss";
 
 import menuEntries from "./pages/menuEntries.json";
+import searchIndex from "./assets/search_index.json";
 
 function App() {
   const [selectedTab, setSelectedTab] = useState<number>(0);
@@ -55,7 +56,7 @@ function App() {
             <Route path="metadata" element={<Metadata />} />
             <Route path="jpg-reconstruction" element={<JPGReconstruction />} />
             <Route path="choosing-output" element={<ChoosingOutput />} />
-            <Route path="search" element={<Search updateSelectedTab={updateSelectedTab}/>} />
+            <Route path="search" element={<Search updateSelectedTab={updateSelectedTab} searchIndex={searchIndex}/>} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
