@@ -9,6 +9,7 @@ module.exports = {
     coveragePathIgnorePatterns: ['/node_modules/'],
     testEnvironment: 'jsdom',
     moduleNameMapper: {
-        '\\.(css|less|scss|sass)$': 'identity-obj-proxy'
+        '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+        "^.+.(png|jpg|jpeg|webp|ttf|woff|woff2)$": "jest-transform-stub"
     }
 };
