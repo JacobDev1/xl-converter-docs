@@ -8,7 +8,7 @@ export default function FAQ(){
         <h2>What technologies are used?</h2>
         <ul>
             <li>JPEG XL - libjxl</li>
-            <li>AVIF - libavif (AOM)</li>
+            <li>AVIF - libavif (AOM AV1)</li>
             <li>JPG, WEBP, Downscaling - ImageMagick</li>
         </ul>
         <p><a href="https://github.com/JacobDev1/xl-converter/blob/stable/LICENSE_3RD_PARTY.txt" target="_blank" >Full list</a></p>
