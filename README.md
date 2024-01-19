@@ -2,7 +2,7 @@
 
 The documentation for [XL Converter](https://github.com/JacobDev1/xl-converter).
 
-Hosted [here](https://xl-converter-docs.codepoems.eu).
+Hosted [here](https://xl-docs.codepoems.eu).
 
 ![](./screenshots/desktop.webp)
 
