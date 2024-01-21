@@ -10,5 +10,6 @@
     ["Settings", "/settings"],
     ["Troubleshooting", "/troubleshooting"],
     ["FAQ", "/faq"],
-    ["Supported Formats", "/supported-formats"]  
+    ["Supported Formats", "/supported-formats"],
+    ["JPEG XL vs AVIF", "/jpeg-xl-vs-avif"]
 ]

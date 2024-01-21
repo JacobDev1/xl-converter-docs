@@ -16,6 +16,7 @@ import Metadata from "./pages/Metadata";
 import JPGReconstruction from "./pages/JPGReconstruction";
 import ChoosingOutput from "./pages/ChoosingOutput";
 import Search from "./pages/Search";
+import JPEGXLvsAVIF from "./pages/JPEGXLvsAVIF";
 
 import "./css/main.scss";
 
@@ -57,6 +58,7 @@ function App() {
             <Route path="jpg-reconstruction" element={<JPGReconstruction />} />
             <Route path="choosing-output" element={<ChoosingOutput />} />
             <Route path="search" element={<Search updateSelectedTab={updateSelectedTab} searchIndex={searchIndex}/>} />
+            <Route path="jpeg-xl-vs-avif" element={<JPEGXLvsAVIF />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
