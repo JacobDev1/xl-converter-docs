@@ -1,4 +1,5 @@
 import { NavigateFunction } from "react-router-dom";
+import { useEffect } from "react";
 
 import SearchBar from "./SearchBar";
 import Footer from "./Footer";
@@ -12,6 +13,10 @@ interface DesktopMenuProps{
 }
 
 export default function DesktopMenu({menuEntries, selectedTab, setSelectedTab, navigate}: DesktopMenuProps){
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [selectedTab]);
+
     return(<div className="navigation">
 
         <SearchBar
