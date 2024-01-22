@@ -15,7 +15,6 @@ export default function Metadata(){
             <li><b>Preserve</b> - copies over all metadata.</li>
             <li><b>Unsafe Wipe</b> - deletes every last bit of metadata, including color profile. It can potentially alter the final image.</li>
         </ul>
-
-        <p>If you still have doubts, all metadata logic is contained within the <code>Metadata.py</code> module in the source code.</p>
+        <p>Preserving metadata to a new format is not always possible or reliable. If your metadata holds significant value, consider using ExifTool directly to export it to text files. XL Converter does not prioritize metadata management.</p>
     </>);
 }
