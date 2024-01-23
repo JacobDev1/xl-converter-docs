@@ -58,8 +58,8 @@ export default function JPEGXLvsAVIF() {
         <img src={photo_hq_jxl} />
         <p>AVIF</p>
         <img src={photo_hq_avif} />
-        <p><b>The visual quality of both is similar, but JPEG XL usually yields smaller file sizes</b> for the same quality.</p>
-        <p>On the other hand, <b>AVIF performs better with medium to low quality preset.</b></p>
+        <p><b>For photos, the visual quality of both is similar, but JPEG XL usually yields 30% smaller file size in high quality presets.</b></p>
+        <p>On the other hand, <b>AVIF performs better in medium to low quality presets.</b></p>
 
         <h3>Very Large Images</h3>
         <p>The image used here is large full-page screenshots. As previously mentioned, all images have been cropped.</p>
