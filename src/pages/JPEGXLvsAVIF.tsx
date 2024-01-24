@@ -74,8 +74,8 @@ export default function JPEGXLvsAVIF() {
         <h3>Suggestion</h3>
         <p>To compare, convert an image to both formats, import them into a canvas in GIMP, then toggle between them. See which one you like.</p>
 
-        <h2>Execution Time (Speed)</h2>
-        <p>Lower is better</p>
+        <h2>Conversion Speed</h2>
+        <p>Higher is better</p>
         <table>
             <tr>
                 <th>Format</th>
@@ -87,15 +87,15 @@ export default function JPEGXLvsAVIF() {
             </tr>
             <tr>
                 <td>JPEG XL (XL Converter)</td>
-                <td>2.5x</td>
+                <td>0.4x</td>
             </tr>
             <tr>
-                <td>JPEG XL (cjxl - base)</td>
-                <td>5x</td>
+                <td>JPEG XL (cjxl)</td>
+                <td>0.2x</td>
             </tr>
             <tr>
                 <td>AVIF</td>
-                <td>5.8x</td>
+                <td>0.17x</td>
             </tr>
         </table>
 
