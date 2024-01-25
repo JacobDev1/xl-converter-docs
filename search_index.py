@@ -1,7 +1,10 @@
+import json
+import os
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import WebDriverException
 from selenium.webdriver.firefox.options import Options
-import json, os
 
 # Config
 URL = "localhost:5173"
@@ -35,8 +38,8 @@ class GenerateSearchIndex():
     def getOutput(self):
         return self.output
 
-    def close(self):
-        self.driver.close()
+    def quit(self):
+        self.driver.quit()
 
 def loadFileAsJSON(path):
     loaded = {}
@@ -53,11 +56,20 @@ if __name__ == "__main__":
     page_list = loadFileAsJSON(PAGE_LIST_PATH)
     generator = GenerateSearchIndex(URL)
     pages_len = len(page_list)
-    
-    for idx, page in enumerate(page_list):
-        generator.feed(page[0], page[1])
-        print(f"[Generating] {idx+1} out of {len(page_list)} pages")
 
+    try:    
+        for idx, page in enumerate(page_list):
+            generator.feed(page[0], page[1])
+            print(f"[Generating] {idx+1} out of {len(page_list)} pages")
+    except WebDriverException:
+        print("[Error] WebDriverException. Forgot to run `npm run serve`?")
+        generator.quit()
+        exit(1)
+    except KeyboardInterrupt:
+        print("[Interrupted] Keyboard Interrupted")
+        generator.quit()
+        exit(0)
+    
     saveJSONtoFile(generator.getOutput(), OUTPUT_PATH)
-    generator.close()
+    generator.quit()
     print(f"[Done] Saved to {OUTPUT_PATH}")
