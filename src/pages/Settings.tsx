@@ -13,6 +13,7 @@ export default function Settings(){
         <h2>Conversion</h2>
         <ul>
             <li>Downscaling - Custom Resampling - enables resampling mode selection in the <b>Modify Tab</b>. You should probably not change it.</li>
+            <li>Disable UTF-8 Check (JPEG XL / Windows) - JPEG XL only supports ANSI on Windows. If you find some ANSI characters being blocked, try enabling this option.</li>
         </ul>
     </>);
 }
