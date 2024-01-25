@@ -42,12 +42,12 @@
     {
         "title": "Settings",
         "link": "/settings",
-        "content": "Settings General Dark Theme - the intended look of XL Converter Disable Downscaling on Startup - disables downscaling when you when you launch the application. Disable Delete Original on Startup - unchecks delete original when you when you launch the application. Disable Exception Popups - the pop-up displaying errors encountered during conversion will no longer appear. Input - Disable Sorting - disables sorting in the Input Tab, has no effect on performance. Conversion Downscaling - Custom Resampling - enables resampling mode selection in the Modify Tab. You should probably not change it. "
+        "content": "Settings General Dark Theme - the intended look of XL Converter Disable Downscaling on Startup - disables downscaling when you when you launch the application. Disable Delete Original on Startup - unchecks delete original when you when you launch the application. Disable Exception Popups - the pop-up displaying errors encountered during conversion will no longer appear. Input - Disable Sorting - disables sorting in the Input Tab, has no effect on performance. Conversion Downscaling - Custom Resampling - enables resampling mode selection in the Modify Tab. You should probably not change it. Disable UTF-8 Check (JPEG XL / Windows) - JPEG XL only supports ANSI on Windows. If you find some ANSI characters being blocked, try enabling this option. "
     },
     {
         "title": "Troubleshooting",
         "link": "/troubleshooting",
-        "content": "Troubleshooting Bug Reports You can submit a bug report in 2 ways [public] - Submit a new GitHub Issue [private] - Email me at contact@codepoems.eu Technical Supports Direct support from the developer is available via Patreon. VCOMP140.DLL was not found Install Visual C++ Redistributables 2015 - 2022. This is needed for ImageMagick to work. Doesn't Launch If the program won't launch, delete the following folder. Windows - %localappdata%/xl-converter Linux - ~/.config/xl-converter "
+        "content": "Troubleshooting Bug Reports You can submit a bug report in 2 ways [public] - Submit a new GitHub Issue [private] - Email me at contact@codepoems.eu VCOMP140.DLL was not found Install Visual C++ Redistributables 2015 - 2022. This is needed for ImageMagick to work. Doesn't Launch If the program won't launch, delete the following folder. Windows - %localappdata%/xl-converter Linux - ~/.config/xl-converter "
     },
     {
         "title": "FAQ",
