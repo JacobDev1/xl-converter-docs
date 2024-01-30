@@ -19,20 +19,17 @@ export default function JPEGXLvsAVIF() {
         <p>Recommended uses:</p>
         <p>AVIF</p>
         <ul>
-            <li>Desktop Screenshots</li>
+            <li>Screenshots</li>
             <li>Digital Drt</li>
-            <li>Saving Space</li>
-            <li>Medium to Low Quality Preset</li>
+            <li>Synthetic Imagery</li>
         </ul>
         <p>JPEG XL</p>
         <ul>
-            <li>Scanned Documents</li>
-            <li>Website Screenshots (full-page)</li>
+            <li>Photos</li>
             <li>Large Images (8k)</li>
-            <li>High Quality Preset</li>
-            <li>Lossless Images</li>
+            <li>Scanned Documents</li>
         </ul>
-        
+
         <h2>Visual Test</h2>
         <p>All Images are first converted, then cropped and enlarged to emphasize differences. <b>These differences will not be noticeable in everyday use.</b> All file sizes are roughly the same.</p>
         <h3>Digital Text</h3>
