@@ -45,11 +45,19 @@ export default function Formats(){
             <li>Effort - higher is better
                 <ul>
                     <li>7 - regular speed and good quality</li>
-                    <li>9 - slow speed, better quality, and sometimes smaller file size</li>
+                    <li>9 - slow speed and better quality. Always results in a smaller size for Lossless and Modular. For VarDCT it can be smaller, but it's not a rule.</li>
                     <li>Intelligent Effort - prioritizes smaller file sizes</li>
                 </ul>
             </li>
+            <li>JPEG XL - Lossy Mode
+                <ul>
+                    <li>Default - encoder's default (VarDCT)</li>
+                    <li>VarDCT - best for photographs</li>
+                    <li>Modular - best for text, digital art, desktop screenshots, documents etc. Preserves edges.</li>
+                </ul>
+            </li>
         </ul>
+
         <h3>AVIF</h3>
         <ul>
             <li>Constant Quality - lower is better quality and bigger size

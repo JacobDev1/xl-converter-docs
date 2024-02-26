@@ -71,6 +71,9 @@ export default function JPEGXLvsAVIF() {
         <h3>Suggestion</h3>
         <p>To compare, convert an image to both formats, import them into a canvas in GIMP, then toggle between them. See which one you like.</p>
 
+        <h2>Lossless</h2>
+        <p>JPEG XL lossless mode is very efficient. WEBP may perform better on certain images, but on average JPEG XL is the best. AVIF does feature a lossless mode, but I decided not to implement as it much worse than WEBP's.</p>
+
         <h2>Conversion Speed</h2>
         <p>Higher is better</p>
         <table>

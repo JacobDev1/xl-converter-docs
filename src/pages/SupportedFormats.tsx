@@ -82,7 +82,7 @@ export default function SupportedFormats(){
         </ul>
 
         <h2>Animation</h2>
-        <p>XL Converter is an image-only tool. Animation support is limited, will not be expanded, and may be removed in the future.</p>
+        <p>XL Converter is an image-only tool. Animation support is limited, and will be removed in the future. Use FFmpeg instead.</p>
         <table>
             <thead>
                 <tr>

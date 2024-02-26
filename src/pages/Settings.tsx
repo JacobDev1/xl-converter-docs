@@ -10,10 +10,10 @@ export default function Settings(){
             <li>Input - Disable Sorting - disables sorting in the <b>Input Tab</b>, has no effect on performance.</li>
         </ul>
 
-        <h2>Conversion</h2>
+        <h2>Advanced</h2>
         <ul>
-            <li>Downscaling - Custom Resampling - enables resampling mode selection in the <b>Modify Tab</b>. You should probably not change it.</li>
-            <li>Disable UTF-8 Check (JPEG XL / Windows) - JPEG XL only supports ANSI on Windows. If you find some ANSI characters being blocked, try enabling this option.</li>
+            <li>JPEG XL - Disable UTF-8 Check - on Windows, JPEG XL supports ANSI only. If you find some ANSI characters being blocked, try checking this option.</li>
+            <li>Downscaling - Custom Resampling - enables resampling mode selection in the <b>Modify Tab</b>. Do not change it.</li>
         </ul>
     </>);
 }

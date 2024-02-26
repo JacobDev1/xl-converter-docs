@@ -9,12 +9,13 @@ export default function Metadata(){
             <li><b>Preserve</b> - preserves basic metadata.</li>    
         </ul>
         <h2>ExifTool</h2>
-        <p>Those options will ensure that metadata will always be handled the way you want it to. The conversion will take longer because every file gets rewritten.</p>
+        <p>Those options will ensure that metadata will be handled the way you want it to. The conversion will take longer because every file gets rewritten.</p>
         <ul>
             <li><b>Safe Wipe</b> - deletes all except the data affecting the final image.</li>
             <li><b>Preserve</b> - copies over all metadata.</li>
             <li><b>Unsafe Wipe</b> - deletes every last bit of metadata, including color profile. It can potentially alter the final image.</li>
         </ul>
-        <p>Preserving metadata to a new format is not always possible or reliable. If your metadata holds significant value, consider using ExifTool directly to export it to text files. XL Converter does not prioritize metadata management.</p>
+        <p>Preserving metadata is challenging, because image formats are rarely 100% compatible with one another.</p>
+        <p>If your metadata holds significant value, consider using ExifTool directly to export it to text files.</p>
     </>);
 }
