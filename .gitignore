@@ -24,6 +24,9 @@ dist-ssr
 *.sw?
 
 # Misc.
-notes.txt
 env
 coverage
+
+# Custom
+notes.txt
+/private_files/**
