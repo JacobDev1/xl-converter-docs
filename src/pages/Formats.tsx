@@ -51,9 +51,9 @@ export default function Formats(){
             </li>
             <li>JPEG XL - Lossy Mode
                 <ul>
-                    <li>Default - encoder's default (VarDCT)</li>
-                    <li>VarDCT - best for photographs</li>
-                    <li>Modular - best for text, digital art, desktop screenshots, documents etc. Preserves edges.</li>
+                    <li>Default - encoder decides (favors VarDCT)</li>
+                    <li>VarDCT - best for natural or complex images, like photographs</li>
+                    <li>Modular - best for images with sharp edges and flat areas, like digital art, screenshots, documents etc.</li>
                 </ul>
             </li>
         </ul>
