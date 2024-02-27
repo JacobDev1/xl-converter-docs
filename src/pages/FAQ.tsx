@@ -3,7 +3,7 @@ export default function FAQ(){
         <h1>FAQ</h1>
         
         <h2>Is XL Converter safe?</h2>
-        <p>Of course! The source is public available (and auditable).</p>
+        <p>Of course! The source is publicly available (and auditable).</p>
 
         <h2>What technologies are used?</h2>
         <ul>

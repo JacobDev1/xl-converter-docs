@@ -32,8 +32,8 @@ export default function JPEGXLvsAVIF() {
         <img src={photo_jxl} />
         <p>AVIF (Quality 90) - 4.6 MiB</p>
         <img src={photo_avif} />
-        <p>JPEG XL yields smaller size and produces less artifacts than AVIF in photos with high quality preset. Experts may prefer it for its high bit-depth and high resolution support.</p>
-        <p>On the other hand, AVIF produces sharper image in medium to low quality presets.</p>
+        <p>JPEG XL yields a smaller size and produces fewer artifacts than AVIF in photos with high quality preset. Experts may prefer it for its high bit-depth and high resolution support.</p>
+        <p>On the other hand, AVIF produces sharper images in medium to low quality presets.</p>
         
         <h3>Digital Art</h3>
         <p>Legacy JPG (Quality 53) - 168 KiB</p>
@@ -49,7 +49,7 @@ export default function JPEGXLvsAVIF() {
         <p>Convert an image to both formats, import them into a canvas in GIMP, then toggle between the layers.</p>
 
         <h2>Lossless</h2>
-        <p>JPEG XL lossless mode is very efficient. WEBP may perform better on certain images, but on average JPEG XL is the <a href="https://codepoems.eu/posts/how-to-reduce-the-size-of-lossless-images/" target="_blank">best</a>. AVIF does feature a lossless mode, but I decided not to implement as it is much worse than WEBP's.</p>
+        <p>JPEG XL lossless mode is very efficient. WEBP may perform better on certain images, but on average JPEG XL is the <a href="https://codepoems.eu/posts/how-to-reduce-the-size-of-lossless-images/" target="_blank">best</a>. AVIF does feature a lossless mode, but I decided not to implement it as it is much worse than WEBP's.</p>
 
         <h2>Conversion Speed</h2>
         <p>Higher is better</p>

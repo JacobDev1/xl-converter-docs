@@ -11,7 +11,7 @@ export default function GettingStarted(){
         <p>Only download XL Converter from codepoems.eu.</p>
 
         <h3>Windows</h3>
-        <p>Double-click on the downloaded file, a warning may appear. Click on</p>
+        <p>Double-click on the downloaded file. A warning may appear. Click on</p>
         <ul>
             <li>More Info (link)</li>
             <li>Run Anyway (button)</li>

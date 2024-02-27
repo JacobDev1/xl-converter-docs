@@ -14,13 +14,13 @@ export default function Downscaling(){
         <p>Example: 80% will result in a 20% smaller image</p>
 
         <h2>Shortest and Longest Side</h2>
-        <p>Makes particular side fit under the selected size. Helpful with vertical images.</p>
+        <p>Makes a particular side fit under the selected size. Helpful with vertical images.</p>
 
         <h2>File Size</h2>
         <p>You should pick a different mode whenever possible. This one is very slow.</p>
         <ul>
             <li>File Size (KiB) - desired file size</li>
-            <li>Auto (Linear Regression) - faster and better algorithm. Files may end up slightly bigger than desired file size.</li>
+            <li>Auto (Linear Regression) - faster and better algorithm. Files may end up slightly bigger than the desired file size.</li>
             <li>Step (%) - value used to progressively shrink an image</li>
         </ul>
         <p><b>Tip: </b>to preserve higher resolution, decrease the quality in the <b>Format Tab</b>.</p>

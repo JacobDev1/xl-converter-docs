@@ -24,7 +24,7 @@ export default function Formats(){
 
         <p>Web standard, fast to convert, and mostly supported.</p>
         <ul>
-            <li>WEBP - a better replacement for JPG and PNG. Lossless mode works great and lossy is still decent.</li>
+            <li>WEBP - a better replacement for JPG and PNG. The lossless mode works great and lossy is still decent.</li>
         </ul>
 
         <p>Large size, but compatible with everything.</p>
@@ -53,7 +53,7 @@ export default function Formats(){
                 <ul>
                     <li>Default - encoder decides (favors VarDCT)</li>
                     <li>VarDCT - best for natural or complex images, like photographs</li>
-                    <li>Modular - best for images with sharp edges and flat areas, like digital art, screenshots, documents etc.</li>
+                    <li>Modular - best for images with sharp edges and flat areas, like digital art, screenshots, documents, etc.</li>
                 </ul>
             </li>
         </ul>
@@ -93,7 +93,7 @@ export default function Formats(){
         <p>The alternative, <b>Lossless (only If smaller)</b> converts to both lossy and lossless, then picks the smaller one. It's especially useful with WEBP</p>
 
         <h3>Smallest Lossless</h3>
-        <p>XL Converter features <b>Smallest Lossless</b> mode which converts to multiple formats then picks the smallest one.</p>
+        <p>XL Converter features <b>Smallest Lossless</b> mode which converts to multiple formats, and then picks the smallest one.</p>
         <p>Use the checkboxes to disable the ones you don't want.</p>
         <img src={SmallestLossless} />
 

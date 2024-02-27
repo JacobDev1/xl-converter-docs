@@ -16,7 +16,7 @@ export default function Troubleshooting(){
 
         <h2>(Linux) After an update, the program's start menu icon disappeared.</h2>
         <p>The icon will appear after restarting your system.</p>
-        <p>You can also update the menu manualy. Run <code>update-desktop-database ~/.local/share/applications</code></p>
+        <p>You can also update the menu manually. Run <code>update-desktop-database ~/.local/share/applications</code></p>
 
         <h2>Doesn't Launch</h2>
         <p>If the program won't launch, delete the following folder.</p>
