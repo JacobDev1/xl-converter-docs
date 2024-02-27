@@ -1,14 +1,8 @@
-import test_avif from '../assets/test_avif.webp';
-import test_jxl from '../assets/test_jxl.webp';
-import test_jpg from '../assets/test_jpg.webp';
 import digital_art_avif from '../assets/test_digital_art_avif.webp';
 import digital_art_jxl from '../assets/test_digital_art_jxl.webp';
 import digital_art_jpg from '../assets/test_digital_art_jpg.webp';
-import large_img_jpg from '../assets/test_large_jpg.webp';
-import large_img_jxl from '../assets/test_large_jxl.webp';
-import large_img_avif from '../assets/test_large_avif.webp';
-import photo_hq_avif from '../assets/test_photo_hq_avif.webp';
-import photo_hq_jxl from '../assets/test_photo_hq_jxl.webp';
+import photo_avif from '../assets/test_photo_avif.webp';
+import photo_jxl from '../assets/test_photo_jxl.webp';
 
 export default function JPEGXLvsAVIF() {
     return(<>
@@ -20,7 +14,7 @@ export default function JPEGXLvsAVIF() {
         <p>AVIF</p>
         <ul>
             <li>Screenshots</li>
-            <li>Digital Drt</li>
+            <li>Digital Art</li>
             <li>Synthetic Imagery</li>
         </ul>
         <p>JPEG XL</p>
@@ -30,49 +24,32 @@ export default function JPEGXLvsAVIF() {
             <li>Scanned Documents</li>
         </ul>
 
-        <h2>Visual Test</h2>
-        <p>All Images are first converted, then cropped and enlarged to emphasize differences. <b>These differences will not be noticeable in everyday use.</b> All file sizes are roughly the same.</p>
-        <h3>Digital Text</h3>
-        <p>Legacy JPG</p>
-        <img src={test_jpg} />
-        <p>JPEG XL</p>
-        <img src={test_jxl} />
-        <p>AVIF</p>
-        <img src={test_avif} />
-        <p><b>AVIF produces digital text with better colors and fewer artifacts</b></p>
-
-        <h3>Digital Art</h3>
-        <p>Legacy JPG</p>
-        <img src={digital_art_jpg} />
-        <p>JPEG XL</p>
-        <img src={digital_art_jxl} />
-        <p>AVIF</p>
-        <img src={digital_art_avif} />
-        <p><b>AVIF excels in maintaining accurate colors and edges with fewer artifacts in digital art.</b> JPEG XL does generate occasional gray spots and blurs non-outlined edges.</p>
-
+        <h2>Visual Comparison</h2>
+        <p>Images have been cropped and upscaled. The differences may not be noticeable in everyday use.</p>
+        
         <h3>Photos</h3>
-        <p>JPEG XL</p>
-        <img src={photo_hq_jxl} />
-        <p>AVIF</p>
-        <img src={photo_hq_avif} />
-        <p><b>For photos, the visual quality of both is similar, but JPEG XL usually yields 30% smaller file size in high quality presets.</b></p>
-        <p>On the other hand, <b>AVIF performs better in medium to low quality presets.</b></p>
+        <p>JPEG XL (VarDCT, Quality 90) - 3.7 MiB</p>
+        <img src={photo_jxl} />
+        <p>AVIF (Quality 90) - 4.6 MiB</p>
+        <img src={photo_avif} />
+        <p>JPEG XL yields smaller size and produces less artifacts than AVIF in photos with high quality preset. Experts may prefer it for its high bit-depth and high resolution support.</p>
+        <p>On the other hand, AVIF produces sharper image in medium to low quality presets.</p>
+        
+        <h3>Digital Art</h3>
+        <p>Legacy JPG (Quality 53) - 168 KiB</p>
+        <img src={digital_art_jpg} />
+        <p>JPEG XL (Modular, Quality 80) - 167 KiB</p>
+        <img src={digital_art_jxl} />
+        <p>AVIF (Quality 80) - 168 KiB</p>
+        <img src={digital_art_avif} />
+        <p>AVIF excels at maintaining accurate colors and preserving edges with very few artifacts in digital art. It works the same way on screenshots.</p>
 
-        <h3>Very Large Images</h3>
-        <p>The image used here is large full-page screenshots. As previously mentioned, all images have been cropped.</p>
-        <p>Legacy JPG</p>
-        <img src={large_img_jpg} />
-        <p>JPEG XL</p>
-        <img src={large_img_jxl} />
-        <p>AVIF</p>
-        <img src={large_img_avif} />
-        <p><b>For large images (8 k) JPEG XL outperforms AVIF, regardless of context</b> and produces much smaller file sizes.</p>
-
-        <h3>Suggestion</h3>
-        <p>To compare, convert an image to both formats, import them into a canvas in GIMP, then toggle between them. See which one you like.</p>
+        <h3>Note</h3>
+        <p>It's hard to make an accurate comparison, so try comparing yourself.</p>
+        <p>Convert an image to both formats, import them into a canvas in GIMP, then toggle between the layers.</p>
 
         <h2>Lossless</h2>
-        <p>JPEG XL lossless mode is very efficient. WEBP may perform better on certain images, but on average JPEG XL is the best. AVIF does feature a lossless mode, but I decided not to implement as it much worse than WEBP's.</p>
+        <p>JPEG XL lossless mode is very efficient. WEBP may perform better on certain images, but on average JPEG XL is the <a href="https://codepoems.eu/posts/how-to-reduce-the-size-of-lossless-images/" target="_blank">best</a>. AVIF does feature a lossless mode, but I decided not to implement as it is much worse than WEBP's.</p>
 
         <h2>Conversion Speed</h2>
         <p>Higher is better</p>
@@ -152,21 +129,22 @@ export default function JPEGXLvsAVIF() {
                 <td></td>
             </tr>
         </table>
-        <p>*Only 8193 x 4320 natively, larger sizes are achieved with tiling (which lowers efficiency beyond this resolution)</p>
+        <p>*Only 8193 x 4320 natively, larger sizes are achieved with tiling (which lowers efficiency beyond that resolution)</p>
+
+        <h2>Technical State</h2>
+        <p>While JPEG XL is more future-oriented, it's still in its early stages.</p>
+        <p>The JPEG XL repo states the following:</p>
+        <p><em>"Note: This release is for evaluation purposes and may contain bugs [...]"</em></p>
 
         <h2>Additional Information</h2>
-        <p>While JPEG XL is more future-oriented, it's still in its early stages. AVIF, on the other hand, is more refined.</p>
-        <p>The JPEG XL's GitHub page mentions that each release is intended for evaluation and may contain bugs. If you choose to use JPEG XL, you may need to deal with technical issues.</p>
         <p>It's important to note that both AVIF and JPEG XL significantly outperform HEIF.</p>
-        <p>I am not affiliated with any format or their developers, nor have I received a single cent for the 1000+ hours of work I have done on XL Converter.</p>
-        <p>Credits:{' '}
-            <a href="https://www.linuxmint.com/download.php/" target="_blank" rel="noreferrer">Digital Text</a> / {' '}
-            <a href="https://pixabay.com/users/andsproject-26081561/" target="_blank" rel="noreferrer">Digital Art</a> / {' '}
+        <p>Samples:{' '}
+            <a href="https://pixabay.com/vectors/girl-clouds-stars-art-calm-anime-8435339/" target="_blank" rel="noreferrer">Digital Art</a> / {' '}
             <a href="https://unsplash.com/photos/gray-concrete-building-during-daytime-q0tlOqyn_fk/" target="_blank" rel="noreferrer">Photos</a>
         </p>
         <p>Encoders:
             cjxl from libjxl 0.8.2 / libavif (AOM-AV1 3.8.0)
         </p>
-        <p>XL Converter uses AOM-AV1 for AVIF. Other libraries will not perform as well.</p>
+        <p>XL Converter uses AOM-AV1 for AVIF. Other AV1 encoders provide worse quality. Keep this in mind when comparing your results.</p>
     </>);
 }
