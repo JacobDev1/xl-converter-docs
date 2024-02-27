@@ -13,7 +13,7 @@ const searchIndex = [
 ];
 
 describe('Search', () => {
-    it('displays search reults correctly', () => {
+    it('displays search results correctly', () => {
         const result = render(
             <MemoryRouter initialEntries={['/search?q=files']}> 
                 <Search
