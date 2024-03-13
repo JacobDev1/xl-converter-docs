@@ -38,7 +38,7 @@ export default function Formats(){
         <ul>
             <li>Quality</li>
             <ul>
-                <li>90 - very high</li>
+                <li>90 - visually lossless</li>
                 <li>80 - high quality and reasonable size</li>
                 <li>60 - space saving sweet-spot</li>
             </ul>
@@ -86,6 +86,19 @@ export default function Formats(){
             </li>
         </ul>
         <p>The mode (-m) is always set to 6 for better quality and smaller file size.</p>
+
+        <h3>JPG</h3>
+        <ul>
+            <li>Quality
+
+            </li>
+            <li>Encoder
+                <ul>
+                    <li>JPEGLI from JPEG XL - the highest quality JPG encoder available. Preserves accurate colors with fewer artifacts and smaller size. Handles text and screenshots noticeably better. 2x faster than ImageMagick.</li>
+                    <li>ImageMagick - stable, trusted and tested. Photos end up slightly sharper compared to JPEGLI (not related to quality).</li>
+                </ul>
+            </li>
+        </ul>
 
         <h2>Formats - Lossless</h2>
         <h3>Manual</h3>

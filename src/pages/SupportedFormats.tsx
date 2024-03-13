@@ -99,14 +99,14 @@ export default function SupportedFormats(){
                     <td>Yes</td>
                     <td>-</td>
                     <td>GIF, APNG</td>
-                    <td>Limited to Effort 7</td>
+                    <td>-</td>
                 </tr>
                 <tr>
                     <td>WEBP</td>
                     <td>Yes</td>
                     <td>-</td>
                     <td>GIF</td>
-                    <td>-</td>
+                    <td>Partial support</td>
                 </tr>
                 <tr>
                     <td>GIF</td>

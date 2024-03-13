@@ -36,13 +36,13 @@ export default function JPEGXLvsAVIF() {
         <p>On the other hand, AVIF produces sharper images in medium to low quality presets.</p>
         
         <h3>Digital Art</h3>
-        <p>Legacy JPG (Quality 53) - 168 KiB</p>
+        <p>Regular JPG (Quality 53) - 168 KiB</p>
         <img src={digital_art_jpg} />
         <p>JPEG XL (Modular, Quality 80) - 167 KiB</p>
         <img src={digital_art_jxl} />
         <p>AVIF (Quality 80) - 168 KiB</p>
         <img src={digital_art_avif} />
-        <p>AVIF excels at maintaining accurate colors and preserving edges with very few artifacts in digital art. It works the same way on screenshots.</p>
+        <p>AVIF performs best on images with sharp edges and flat areas. It also maintains accurate colors.</p>
 
         <h3>Note</h3>
         <p>It's hard to make an accurate comparison, so try comparing yourself.</p>
@@ -52,29 +52,47 @@ export default function JPEGXLvsAVIF() {
         <p>JPEG XL lossless mode is very efficient. WEBP may perform better on certain images, but on average JPEG XL is the <a href="https://codepoems.eu/posts/how-to-reduce-the-size-of-lossless-images/" target="_blank">best</a>. AVIF does feature a lossless mode, but I decided not to implement it as it is much worse than WEBP's.</p>
 
         <h2>Conversion Speed</h2>
-        <p>Higher is better</p>
+        <p>Lower is better</p>
         <table>
             <tr>
                 <th>Format</th>
+                <th>Encoder</th>
                 <th>Speed</th>
+                <th>Notes</th>
             </tr>
             <tr>
-                <td>Legacy JPG</td>
-                <td>1x</td>
+                <td>JPG</td>
+                <td>JPEGLI</td>
+                <td>1.7 s</td>
+                <td></td>
             </tr>
             <tr>
-                <td>JPEG XL (XL Converter)</td>
-                <td>0.4x</td>
+                <td>JPG</td>
+                <td>ImageMagick</td>
+                <td>4.3 s</td>
+                <td></td>
             </tr>
             <tr>
-                <td>JPEG XL (cjxl)</td>
-                <td>0.2x</td>
+                <td>JPEG XL</td>
+                <td>libjxl</td>
+                <td>11.5 s</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>JPEG XL</td>
+                <td>libjxl</td>
+                <td>15.5 s</td>
+                <td>No XL Converter (bash script)</td>
             </tr>
             <tr>
                 <td>AVIF</td>
-                <td>0.17x</td>
+                <td>libavif</td>
+                <td>25.9 s</td>
+                <td></td>
             </tr>
         </table>
+        <p>Speed / Effort were set to default.</p>
+        <p>XL Converter makes encoders faster by running them in parallel.</p>
 
         <h2>Capabilities</h2>
         <table>
@@ -132,18 +150,16 @@ export default function JPEGXLvsAVIF() {
         <p>*Only 8193 x 4320 natively, larger sizes are achieved with tiling (which lowers efficiency beyond that resolution)</p>
 
         <h2>Technical State</h2>
-        <p>While JPEG XL is more future-oriented, it's still in its early stages.</p>
+        <p>While JPEG XL is more future-oriented, it's still in its early stages. Bugs are to be expected.</p>
         <p>The JPEG XL repo states the following:</p>
         <p><em>"Note: This release is for evaluation purposes and may contain bugs [...]"</em></p>
+        <p>AVIF is much more stable in this regard.</p>
 
         <h2>Additional Information</h2>
         <p>It's important to note that both AVIF and JPEG XL significantly outperform HEIF.</p>
         <p>Samples:{' '}
             <a href="https://pixabay.com/vectors/girl-clouds-stars-art-calm-anime-8435339/" target="_blank" rel="noreferrer">Digital Art</a> / {' '}
             <a href="https://unsplash.com/photos/gray-concrete-building-during-daytime-q0tlOqyn_fk/" target="_blank" rel="noreferrer">Photos</a>
-        </p>
-        <p>Encoders:
-            cjxl from libjxl 0.8.2 / libavif (AOM-AV1 3.8.0)
         </p>
         <p>XL Converter uses AOM-AV1 for AVIF. Other AV1 encoders provide worse quality. Keep this in mind when comparing your results.</p>
     </>);
