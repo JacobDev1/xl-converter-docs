@@ -32,8 +32,8 @@ export default function JPEGXLvsAVIF() {
         <img src={photo_jxl} />
         <p>AVIF (Quality 90) - 4.6 MiB</p>
         <img src={photo_avif} />
-        <p>JPEG XL yields a smaller size and produces fewer artifacts than AVIF in photos with high quality preset. Experts may prefer it for its high bit-depth and high resolution support.</p>
-        <p>On the other hand, AVIF produces sharper images in medium to low quality presets.</p>
+        <p>JPEG XL yields a smaller size and produces fewer artifacts than AVIF in photos with high-quality preset. Experts may prefer it for its high bit-depth and high-resolution support.</p>
+        <p>On the other hand, AVIF produces sharper images in medium to low-quality presets.</p>
         
         <h3>Digital Art</h3>
         <p>Regular JPG (Quality 53) - 168 KiB</p>

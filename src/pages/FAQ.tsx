@@ -20,7 +20,7 @@ export default function FAQ(){
             <li>JPEG XL - 32 bit</li>
             <li>AVIF - 12 bit</li>
         </ul>
-        <p>JPG, WEBP, Smallest Lossless and Downscaling are limited to 8 bit.</p>
+        <p>JPG, WEBP, Smallest Lossless, and Downscaling are limited to 8 bit.</p>
 
         <h2>What are the requirements to run it?</h2>
         <p>System</p>
