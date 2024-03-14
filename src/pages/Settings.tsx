@@ -12,7 +12,8 @@ export default function Settings(){
 
         <h2>Advanced</h2>
         <ul>
-            <li>JPEG XL - Disable UTF-8 Check - on Windows, JPEG XL supports ANSI only. If you find some ANSI characters being blocked, try checking this option.</li>
+            <li>JPEG XL - Enable Effort 10 (slow) - raises Effort limit from 9 to 10. Effort 10 is very slow, but can produce smaller files in lossless.</li>
+            <li>JPEG XL - Disable UTF-8 Check - on Windows JPEG XL supports ANSI only. If you find some ANSI characters being blocked, try checking this option.</li>
             <li>Downscaling - Custom Resampling - enables resampling mode selection in the <b>Modify Tab</b>. Do not change it.</li>
         </ul>
     </>);

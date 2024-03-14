@@ -153,7 +153,7 @@ export default function JPEGXLvsAVIF() {
         <p>While JPEG XL is more future-oriented, it's still in its early stages. Bugs are to be expected.</p>
         <p>The JPEG XL repo states the following:</p>
         <p><em>"Note: This release is for evaluation purposes and may contain bugs [...]"</em></p>
-        <p>AVIF is much more stable in this regard.</p>
+        <p>AVIF is more stable in this regard.</p>
 
         <h2>Additional Information</h2>
         <p>It's important to note that both AVIF and JPEG XL significantly outperform HEIF.</p>
