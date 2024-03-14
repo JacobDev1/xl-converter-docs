@@ -1,4 +1,4 @@
-.PHONY: build run index
+.PHONY: build run index test
 
 build:
 	npm run build
@@ -11,3 +11,6 @@ index:
 
 kill-firefox:
 	pkill firefox
+
+test:
+	npm run test

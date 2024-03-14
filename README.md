@@ -52,6 +52,12 @@ Finally, generate the search index.
 make index
 ```
 
+## Testing
+
+```bash
+make test
+```
+
 ## Deploying
 
 ```
