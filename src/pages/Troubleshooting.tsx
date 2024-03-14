@@ -12,8 +12,8 @@ export default function Troubleshooting(){
         <p>Install <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">Visual C++ Redistributable 2015 - 2022</a>. This is needed for ImageMagick to work.</p>
 
         <h2>Running out of RAM (JPEG XL)</h2>
-        <p>Set the thread count to 1.</p>
-        <p>JPEG XL requires a lot of RAM for very large images. To make the conversion faster, XL Converter runs encoders in parallel. This also increases the total RAM usage.</p>
+        <p>This is only a problem for unreasonably large images.</p>
+        <p>Set Effort to 7 and Lossy Mode to VarDCT. Image viewers may fail to open JPEG XL images of extreme sizes. <a href="https://github.com/libjxl/libjxl/issues/3398" target="_blank">~libjxl issue</a></p>
 
     </div>);
 }
