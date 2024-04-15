@@ -85,7 +85,6 @@ export default function Formats(){
                 </ul>
             </li>
         </ul>
-        <p>The mode (-m) is always set to 6 for better quality and smaller file size.</p>
 
         <h3>JPG</h3>
         <ul>

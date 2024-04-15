@@ -37,7 +37,7 @@ export default function DesktopMenu({menuEntries, selectedTab, setSelectedTab, n
             ))}
 
             <Footer />
-            {/* <button className="donate-btn"><a href="https://codepoems.eu/donate" target="_blank">Donate</a></button> */}
+            <button className="donate-btn"><a href="https://codepoems.eu/donate" target="_blank">Donate</a></button>
         </div>
 
     </div>);

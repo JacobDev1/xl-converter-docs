@@ -17,5 +17,7 @@ export default function ChoosingOutput(){
             <li>Absolute path (e.g. <code>C:/Images/Converted</code>)</li>
             <li>Relative path (e.g. <code>Converted</code>) - saves to a folder of that name next source image</li>
         </ul>
+        <p><b>"Keep Folder Structure"</b> option preserves the original folder hierarchy when saving images.</p>
+
     </>);
 }

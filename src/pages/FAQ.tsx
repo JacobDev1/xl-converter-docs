@@ -1,9 +1,9 @@
 export default function FAQ(){
     return(<div>
         <h1>FAQ</h1>
-        
+
         <h2>Is XL Converter safe?</h2>
-        <p>Of course! The source is publicly available (and auditable).</p>
+        <p>Of course! The source code is publicly available (and auditable).</p>
 
         <h2>What technologies are used?</h2>
         <ul>
@@ -22,16 +22,5 @@ export default function FAQ(){
         </ul>
         <p>JPG, WEBP, Smallest Lossless, and Downscaling are limited to 8 bit.</p>
 
-        <h2>What are the requirements to run it?</h2>
-        <p>System</p>
-        <ul>
-            <li>Windows 10 64-bit (1809 or later)</li>
-            <li>Linux 64-bit (kernel 5.15 or later)</li>
-        </ul>
-        <p>Hardware: 4-core CPU and 8 GB of RAM</p>
-
-        <h2>Will you add MozJPEG?</h2>
-        <p>XL Converter uses <a href="https://github.com/libjxl/libjxl/blob/main/lib/jpegli/README.md" target="_blank">JPEGLI</a>, which performs on pair with MozJPEG (If not better).</p>
-        
     </div>);
 }

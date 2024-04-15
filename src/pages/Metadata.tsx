@@ -3,7 +3,7 @@ export default function Metadata(){
         <h1>Metadata</h1>
         <p>The metadata options are located in the <b>Modify Tab</b>, over to the right.</p>
         <h2>Encoder</h2>
-        <p><b>These options are recommended for most users.</b></p>
+        <p><b>These options are recommended for most users.</b> They are faster and least likely to cause any issues. However, their effectiveness vary.</p>
         <ul>
             <li><b>Wipe</b> - wipes metadata.</li>    
             <li><b>Preserve</b> - preserves metadata.</li>    
@@ -50,11 +50,17 @@ export default function Metadata(){
         <p>Using a format unsupported by the encoder will lower the chances of metadata being preserved.</p>
 
         <h2>ExifTool</h2>
-        <p>Those options will ensure metadata will be handled properly, but the conversion will take longer. They can be potentially destructive.</p>
+        <p>ExifTool will handle your metadata more thoroughly, but the conversion will take longer.</p>
         <ul>
             <li><b>Safe Wipe</b> - deletes all metadata except the one affecting the final image.</li>
             <li><b>Preserve</b> - copies over all metadata.</li>
             <li><b>Unsafe Wipe</b> - deletes every last bit of metadata, including color profile. It can potentially alter the final image.</li>
+        </ul>
+        <p>Corresponding commands</p>
+        <ul>
+            <li><b>Safe Wipe</b> - <code>exiftool -all= -tagsFromFile @ --icc_profile:all --ColorSpace:all -overwrite_original &lt;dst&gt;</code></li>
+            <li><b>Preserve</b> - <code>exiftool -tagsfromfile &lt;src&gt; -overwrite_original &lt;dst&gt;</code></li>
+            <li><b>Unsafe Wipe</b> - <code>exiftool -all= -overwrite_original &lt;dst&gt;</code></li>
         </ul>
         
         <h2>Exceptions</h2>
