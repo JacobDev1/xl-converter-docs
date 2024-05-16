@@ -3,13 +3,13 @@
     ["Adding Files", "/adding-files"],
     ["Choosing Output", "/choosing-output"],
     ["Formats", "/formats"],
+    ["Supported Formats", "/supported-formats"],
     ["Downscaling", "/downscaling"],
-    ["Shortcuts", "/shortcuts"],
     ["Metadata", "/metadata"],
     ["JPG Reconstruction", "/jpg-reconstruction"],
-    ["Settings", "/settings"],
+    ["Shortcuts", "/shortcuts"],
     ["Troubleshooting", "/troubleshooting"],
     ["FAQ", "/faq"],
-    ["Supported Formats", "/supported-formats"],
+    ["Settings", "/settings"],
     ["JPEG XL vs AVIF", "/jpeg-xl-vs-avif"]
 ]
