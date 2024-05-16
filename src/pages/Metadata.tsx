@@ -1,7 +1,7 @@
 export default function Metadata(){
     return(<>
         <h1>Metadata</h1>
-        <p>The metadata options are located in the <b>Modify Tab</b>, over to the right.</p>
+        <p>All metadata options are located in the <b>Modify Tab</b>.</p>
         <h2>Encoder</h2>
         <p><b>These options are recommended for most users.</b> They are faster and less likely to cause any issues. However, their effectiveness varies.</p>
         <ul>
@@ -47,7 +47,6 @@ export default function Metadata(){
                 <td>Varies</td>
             </tr>
         </table>
-        <p>Using a format unsupported by the encoder will lower the chances of metadata being preserved.</p>
 
         <h2>ExifTool</h2>
         <p>ExifTool will handle your metadata more thoroughly, but the conversion will take longer.</p>
@@ -62,6 +61,10 @@ export default function Metadata(){
             <li><b>Preserve</b> - <code>exiftool -tagsfromfile &lt;src&gt; -overwrite_original &lt;dst&gt;</code></li>
             <li><b>Unsafe Wipe</b> - <code>exiftool -all= -overwrite_original &lt;dst&gt;</code></li>
         </ul>
+
+        <h2>Notes</h2>
+        <p>Preserving metadata is challenging because image formats are rarely 100% compatible with one another.</p>
+        <p>If your metadata holds significant value, consider using ExifTool directly to export it to text files.</p>
         
         <h2>Exceptions</h2>
         <p>The following behavior may differ from what's expected.</p>
@@ -77,9 +80,5 @@ export default function Metadata(){
                 <td>All metadata is preserved to ensure JPG can be fully reconstructed.</td>
             </tr>
         </table>
-
-        <h2>Notes</h2>
-        <p>Preserving metadata is challenging because image formats are rarely 100% compatible with one another.</p>
-        <p>If your metadata holds significant value, consider using ExifTool directly to export it to text files.</p>
     </>);
 }

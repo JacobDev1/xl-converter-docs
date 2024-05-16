@@ -8,7 +8,7 @@ export default function GettingStarted(){
 
         <h2>Installation</h2>
         <a href="https://codepoems.eu/xl-converter" target="_blank"><button>Download Page</button></a>
-        <p>Only download XL Converter from codepoems.eu.</p>
+        <p><em>Only download XL Converter from codepoems.eu.</em></p>
 
         <h3>Windows</h3>
         <p>Double-click on the downloaded file. A warning may appear. Click on</p>
@@ -16,25 +16,27 @@ export default function GettingStarted(){
             <li>More Info (link)</li>
             <li>Run Anyway (button)</li>
         </ul>
-        <p>Windows shows this warning on all software that hasn't rented an expensive digital signature, which serves no other purpose than to remove this popup. This is a <a href="https://ardour.org/windows_defender.html" target="_blank">common problem</a>.</p>
+        <p>Windows shows this warning on all software without an expensive digital certificate. <a href="https://ardour.org/windows_defender.html" target="_blank">More info</a></p>
+        <p>Next, follow the installer.</p>
 
         <h3>Linux</h3>
         <ul>
-            <li>Unpack the archive</li>
+            <li>Unpack the 7z archive</li>
             <li>Run <code>./install.sh</code></li>
         </ul>
-        <p>A shortcut will be added to both the start menu and the desktop.</p>
 
         <h2>Image Viewers</h2>
-        <p>You will need to install an image viewer with support for AVIF and JPEG XL.</p>
+        <p>These image viewers support AVIF and JPEG XL.</p>
         <h3>Windows</h3>
         <ul>
             <li><a href="https://imageglass.org/" target="_blank">ImageGlass</a> - easiest to use</li>
             <li>
                 <a href="https://xnview.com/" target="_blank">XnViewMP</a>{' / '}
-                <a href="https://photoqt.org/" target="_blank">PhotoQt</a>{' / '}
+                <a href="https://irfanview.com/" target="_blank">IrfanView (with plugins)</a>{' / '}
                 <a href="https://picview.org/" target="_blank">PicView</a>{' / '}
-                <a href="https://github.com/nomacs/nomacs" target="_blank">nomacs</a> - alternatives
+                <a href="https://photoqt.org/" target="_blank">PhotoQt</a>{' / '}
+                <a href="https://github.com/nomacs/nomacs" target="_blank">nomacs</a>{' '}
+                - alternatives
             </li>
         </ul>
         <h3>Linux</h3>

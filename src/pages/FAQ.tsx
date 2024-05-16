@@ -4,6 +4,7 @@ export default function FAQ(){
 
         <h2>Is XL Converter safe?</h2>
         <p>Of course! The source code is publicly available (and auditable).</p>
+        <p>Just make sure you are getting it from the official website - <a href="https://codepoems.eu/xl-converter/" target="_blank">codepoems.eu</a> or the <a href="https://github.com/JacobDev1/xl-converter" target="_blank">GitHub repo</a>.</p>
 
         <h2>What technologies are used?</h2>
         <ul>
@@ -12,15 +13,6 @@ export default function FAQ(){
             <li>JPG, WEBP, Downscaling - ImageMagick</li>
         </ul>
         <p>XL Converter was written in Python and PySide6.</p>
-        <p><a href="https://github.com/JacobDev1/xl-converter/blob/stable/LICENSE_3RD_PARTY.txt" target="_blank" >Full list</a></p>
-
-        <h2>Does it support high bit depth?</h2>
-        <p>Yes, the limits are</p>
-        <ul>
-            <li>JPEG XL - 32 bit</li>
-            <li>AVIF - 12 bit</li>
-        </ul>
-        <p>JPG, WEBP, Smallest Lossless, and Downscaling are limited to 8 bit.</p>
 
     </div>);
 }
