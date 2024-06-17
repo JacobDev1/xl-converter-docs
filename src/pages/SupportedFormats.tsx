@@ -1,92 +1,31 @@
+import Table, { TableData } from "../components/Table";
+
+const supportedFormatsData: TableData = {
+    columns: [
+        { key: "format", header: "Format", align: "left" },
+        { key: "reading", header: "Reading", align: "center" },
+        { key: "writing", header: "Writing", align: "center" },
+        { key: "ext", header: "Extensions", align: "left" },
+    ],
+    rows: [
+        { format: "JPEG XL", writing: "Yes", reading: "Yes", ext: "jxl" },
+        { format: "AVIF", writing: "Yes", reading: "Yes", ext: "avif" },
+        { format: "WebP", writing: "Yes", reading: "Yes", ext: "webp" },
+        { format: "JPEG", writing: "Yes", reading: "Yes", ext: "jpg, jpeg, jfif, jif, jpe" },
+        { format: "PNG", writing: "Yes", reading: "Yes", ext: "png" },
+        { format: "TIFF", writing: "No", reading: "Yes", ext: "tiff, tif" },
+        { format: "HEIF", writing: "No", reading: "Yes", ext: "heif, heifs, heic, heics, avci, avcs, hif" },
+        { format: "JP2", writing: "No", reading: "Yes", ext: "jp2" },
+        { format: "BMP", writing: "No", reading: "Yes", ext: "bmp" },
+        { format: "ICO", writing: "No", reading: "Yes", ext: "ico" },
+    ]
+}
+
 export default function SupportedFormats(){
     return(<div>
         <h1>Supported Formats</h1>
-        <h2>Images</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Format</th>
-                    <th>Writing</th>
-                    <th>Reading</th>
-                    <th>Downscaling</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>JPEG XL</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>AVIF</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>WEBP</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>JPG</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>PNG</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Smallest Lossless</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>HEIF</td>
-                    <td>No</td>
-                    <td>Yes</td>
-                    <td>to PNG</td>
-                </tr>
-                <tr>
-                    <td>JP2</td>
-                    <td>No</td>
-                    <td>Yes</td>
-                    <td>to PNG</td>
-                </tr>
-                <tr>
-                    <td>BMP</td>
-                    <td>No</td>
-                    <td>Yes</td>
-                    <td>to PNG</td>
-                </tr>
-                <tr>
-                    <td>ICO</td>
-                    <td>No</td>
-                    <td>Yes</td>
-                    <td>to PNG</td>
-                </tr>
-                <tr>
-                    <td>TIFF <sup>[1]</sup></td>
-                    <td>No</td>
-                    <td>Yes</td>
-                    <td>to PNG</td>
-                </tr>
-            </tbody>
-        </table>
-        <p><sup>[1]</sup> Only single-page TIFFs are supported</p>
-        <p>Supported aliases</p>
-        <ul>
-            <li><b>JPG</b> - jpg, jpeg, jfif, jif, jpe</li>
-            <li><b>HEIF</b> - heif, heifs, heic, heics, avci, avcs, hif</li>
-            <li><b>TIFF</b> - tiff, tif</li>
-        </ul>
+        <Table tableData={supportedFormatsData}/>
+        <p>Multipage images are not supported</p>
 
         <h2>Supported Color Depth</h2>
         <p>XL Converter supports bit depths up to 16-bit. Below are the theoretical limits. </p>
