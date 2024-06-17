@@ -1,28 +1,30 @@
 export default function JPGReconstruction(){
     return(<>
-        <h1>JPG Reconstruction</h1>
+        <h1>Lossless JPEG Recompression</h1>
 
         <h2>Overview</h2>
-        <p>This feature allows you to preserve the original JPG while lowering its file size by 15% - 25%</p>
-        <p>You can reconstruct the original JPG file at any moment.</p>
+        <p>JPEG XL can preserve the original JPEG while lowering its file size by 15% - 25%.</p>
+        <p>This process is reversible - you can reconstruct the original JPEG file with an identical checksum.</p>
 
-        <h2>Encoding Reconstruction Data</h2>
+        <h2>Lossless JPEG Recompression</h2>
         <ol>
-            <li>Add JPG files</li>
-            <li>Select JPEG XL format in the Output tab</li>
-            <li>Check <b>Lossless</b></li>
+            <li>Add JPEG images</li>
+            <li>Select "Lossless JPEG Recompression" from the format selector</li>
             <li>Convert</li>
         </ol>
-        <p>Reconstruction data will be added automatically If the input format is a JPG</p>
-        <p>Increasing the <b>Effort</b> will reduce the file size.</p>
+        <p>The resulting JPEG XL file will have embedded reconstruction data, which can be used to reverse this process.</p>
+        <p>Increasing <b>Effort</b> will reduce the file size.</p>
 
-        <h2>Reconstructing JPG</h2>
+        <h2>JPEG Reconstruction</h2>
+        <p>This function reverses the recompression, resulting in the original JPEG image.</p>
         <ol>
-            <li>Add JXL files</li>
-            <li>Select PNG format</li>
-            <li>Check <b>Reconstruct JPG from JPEG XL</b></li>
+            <li>Add JPEG XL images (jxl)</li>
+            <li>Select "JPEG Reconstruction" from the format selector</li>
             <li>Convert</li>
         </ol>
-        <p>A JPG will be generated instead of a PNG, If reconstruction data is found</p>
+        <p>The "PNG Fallback" option will decode JPEG XL to PNG if reconstruction data was not found.</p>
+
+        <h2>Metadata</h2>
+        <p>In the aforementioned modes, metadata will always be preserved regardless of settings. Preserving Date & Time works as usual.</p>
     </>);
 }

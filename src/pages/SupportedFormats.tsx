@@ -28,7 +28,7 @@ export default function SupportedFormats(){
         <p>Multipage images are not supported</p>
 
         <h2>Supported Color Depth</h2>
-        <p>XL Converter supports bit depths up to 16-bit. Below are the theoretical limits. </p>
+        <p>XL Converter supports bit depths up to 16-bit. 32-bit depth is only available for JPEG XL -&gt; JPEG XL conversion.</p>
         <table>
             <thead>
                 <tr>
@@ -46,11 +46,11 @@ export default function SupportedFormats(){
                     <td>12</td>
                 </tr>
                 <tr>
-                    <td>JPG</td>
+                    <td>JPEG</td>
                     <td>8</td>
                 </tr>
                 <tr>
-                    <td>WEBP</td>
+                    <td>WebP</td>
                     <td>8</td>
                 </tr>
                 <tr>
@@ -81,18 +81,11 @@ export default function SupportedFormats(){
                     <td>-</td>
                 </tr>
                 <tr>
-                    <td>WEBP</td>
+                    <td>WebP</td>
                     <td>Yes</td>
                     <td>-</td>
                     <td>GIF</td>
                     <td>Partial support</td>
-                </tr>
-                <tr>
-                    <td>GIF</td>
-                    <td>-</td>
-                    <td>Yes</td>
-                    <td>-</td>
-                    <td>-</td>
                 </tr>
             </tbody>
         </table>

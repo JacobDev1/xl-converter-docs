@@ -9,11 +9,6 @@ export default function Troubleshooting(){
         </ul>
 
         <h2>VCOMP140.DLL was not found</h2>
-        <p>Install <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">Visual C++ Redistributable 2015 - 2022</a>. This is needed for ImageMagick to work.</p>
-        
-        <h2>Running out of RAM (JPEG XL)</h2>
-        <p>This is only a problem for unreasonably large images.</p>
-        <p>Set Effort to 7 and uncheck Modular. Image viewers may fail to open JPEG XL images of extreme sizes. <a href="https://github.com/libjxl/libjxl/issues/3398" target="_blank">~libjxl issue</a></p>
-
+        <p>Install <a href="https://aka.ms/vs/17/release/vc_redist.x64.exe" target="_blank">Visual C++ Redistributable 2015 - 2022</a>.</p>
     </div>);
 }

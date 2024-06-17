@@ -43,10 +43,10 @@ export default function JPEGXLvsAVIF() {
 
         <h3>Note</h3>
         <p>It's hard to make an accurate comparison, so try comparing yourself.</p>
-        <p>Convert an image to both formats, import them into a canvas in GIMP, then toggle between the layers.</p>
+        <p>Convert an image to both formats, open GIMP, click on "File" and "Open as Layers...". Toggle between the layers to compare the images.</p>
 
         <h2>Lossless</h2>
-        <p>JPEG XL lossless mode offers the best efficiency. WEBP may perform better on certain images, but on average JPEG XL is the <a href="https://codepoems.eu/posts/how-to-reduce-the-size-of-lossless-images/" target="_blank">best</a>.</p>
+        <p>JPEG XL lossless mode offers the best efficiency. WebP may perform better on certain images, but on average JPEG XL is the <a href="https://codepoems.eu/posts/how-to-reduce-the-size-of-lossless-images/" target="_blank">best</a>.</p>
 
         <h2>Conversion Speed</h2>
         <p>Higher is better</p>
@@ -57,13 +57,13 @@ export default function JPEGXLvsAVIF() {
                 <th>Speed</th>
             </tr>
             <tr>
-                <td>JPG</td>
+                <td>JPEG</td>
                 <td>JPEGLI</td>
                 <td>10.26x</td>
             </tr>
             <tr>
-                <td>JPG</td>
-                <td>ImageMagick</td>
+                <td>JPEG</td>
+                <td>libjpeg</td>
                 <td>1.09x</td>
             </tr>
             <tr>

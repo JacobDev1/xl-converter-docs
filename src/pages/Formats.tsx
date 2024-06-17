@@ -32,14 +32,14 @@ export default function Formats(){
                     <td>Yes</td>
                 </tr>
                 <tr>
-                    <td>WEBP</td>
+                    <td>WebP</td>
                     <td>Medium</td>
                     <td>Medium</td>
                     <td>Medium-High</td>
                     <td>Yes</td>
                 </tr>
                 <tr>
-                    <td>JPG</td>
+                    <td>JPEG</td>
                     <td>Low</td>
                     <td>-</td>
                     <td>High</td>
@@ -62,7 +62,7 @@ export default function Formats(){
             <ul>
                 <li>90 - visually lossless</li>
                 <li>80 - high quality and reasonable size</li>
-                <li>60 - space saving sweet-spot</li>
+                <li>60 - space-saving sweet-spot</li>
             </ul>
             <li>Effort - higher is better
                 <ul>
@@ -93,13 +93,13 @@ export default function Formats(){
             </li>
             <li>Speed - lower is slower, better quality, and smaller file size 
                 <ul>
-                    <li>6 - normal speed</li>
-                    <li>0 - very slow, best quality and smallest size</li>
+                    <li>6 - regular speed, and good quality</li>
+                    <li>0 - very slow, the best quality, and smallest file size</li>
                 </ul>
             </li>
         </ul>
       
-        <h3>WEBP</h3>
+        <h3>WebP</h3>
         <ul>
             <li>Quality
                 <ul>
@@ -108,32 +108,29 @@ export default function Formats(){
                     <li>60 - looks fine only far away</li>
                 </ul>
             </li>
+            <li>Method
+                <ul>
+                    <li>6 - slow, smallest file size</li>
+                    <li>4 - faster, bigger file size</li>
+                </ul>
+            </li>
         </ul>
 
         <h3>Chroma Subsampling</h3>
         <p>Controls color compression. Lower number means less color information and smaller file size.</p>
         <ul>
             <li>Default - usually picks 4:4:4, but tries to match the input</li>
-            <li>4:4:4 - full color, highest quality and file size</li>
-            <li>4:2:2 - less color (small visual difference) and significant space saving</li>
+            <li>4:4:4 - full color, the highest quality and file size</li>
+            <li>4:2:2 - less color (small visual difference) and significant space-saving</li>
             <li>4:2:0 - colors may appear washed out</li>
             <li>4:0:0 - grayscale</li>
         </ul>
         <p><a href="https://en.wikipedia.org/wiki/Chroma_subsampling#Regarding_gamma_and_transfer_functions" target="_blank">Learn more</a></p>
         <p>If you are confused, just leave it at default.</p>
 
-        <h3>JPG</h3>
-        <ul>
-            <li>Encoder
-                <ul>
-                    <li>JPEGLI from JPEG XL - extremely fast and high quality, and space efficient.</li>
-                    <li>ImageMagick - stable, trusted, and tested. Great at preserving noise.</li>
-                </ul>
-            </li>
-        </ul>
-
+        <h3>JPEG</h3>
         <h2>Formats - Lossless</h2>
-        <p>Lossless encoding is available for <b>JPEG XL, WEBP or PNG</b>.</p>
+        <p>Lossless encoding is available for <b>JPEG XL, WebP or PNG</b>.</p>
 
         <h3>Smallest Lossless</h3>
         <p>Converts to multiple formats, then picks the smallest one. Can save up to 25% of space.</p>
@@ -142,7 +139,6 @@ export default function Formats(){
 
         <p>While JPEG XL features the most efficient lossless compression on average, other formats can outperform it on certain images.</p>
         <p>Remember the <Link to="/supported-formats">bit depth limits</Link> of each format.</p>
-        <p>JPEG XL automatically appends JPG reconstruction data in this mode.</p>
 
     </div>);
 }
