@@ -6,7 +6,7 @@
     ["Supported Formats", "/supported-formats"],
     ["Downscaling", "/downscaling"],
     ["Metadata", "/metadata"],
-    ["JPG Reconstruction", "/jpg-reconstruction"],
+    ["JPEG Recompression", "/lossless-jpeg-recompression"],
     ["Shortcuts", "/shortcuts"],
     ["Troubleshooting", "/troubleshooting"],
     ["FAQ", "/faq"],

@@ -56,6 +56,7 @@ function App() {
             <Route path="settings" element={<Settings />} />
             <Route path="metadata" element={<Metadata />} />
             <Route path="jpg-reconstruction" element={<JPGReconstruction />} />
+            <Route path="lossless-jpeg-recompression" element={<JPGReconstruction />} />
             <Route path="choosing-output" element={<ChoosingOutput />} />
             <Route path="search" element={<Search updateSelectedTab={updateSelectedTab} searchIndex={searchIndex}/>} />
             <Route path="jpeg-xl-vs-avif" element={<JPEGXLvsAVIF />} />
