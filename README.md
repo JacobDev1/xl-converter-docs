@@ -4,12 +4,11 @@ The documentation for [XL Converter](https://github.com/JacobDev1/xl-converter).
 
 Hosted [here](https://xl-docs.codepoems.eu).
 
-![](./screenshots/desktop.webp)
+![](./screenshots/getting_started.webp)
 
-Features:
-- Search engine
-- Clean design
-- Mobile-friendly
+Features a search engine based on a local index.
+
+![](./screenshots/search.webp)
 
 ## Running
 
@@ -21,29 +20,44 @@ Use latest NodeJS LTS
 nvm install --lts
 ```
 
+Clone the repo.
+
+```bash
+git clone https://github.com/JacobDev1/xl-converter-docs.git
+```
+
+> [!TIP]
+> If you need a specific version, use `git checkout <version_tag>`
+
+Install packages and and run.
+
 ```bash
 npm i
-make run
+npm run dev
 ```
 
 ## Generating Search Index
 
 The search index should be re-generated before deployment.
 
-First, run the project
+First, run the project.
 
 ```bash
 npm i
-make run
+npm run dev
 ```
 
-Open another terminal
+Open another terminal and install Python.
 
 ```bash
 sudo apt install python3 python3-pip python3-venv firefox
-python3 -m venv env
+```
+
+Create a venv.
+
+```bash
+make venv
 source env/bin/activate
-pip install -r requirements.txt
 ```
 
 Finally, generate the search index.
