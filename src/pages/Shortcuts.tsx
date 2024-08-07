@@ -17,6 +17,6 @@ export default function Shortcuts(){
             <li>Shift + Home - select all items above</li>
             <li>Shift + End - select all items below</li>
         </ul>
-        <p>Select Range - click an item, hold shift then click on another.</p>
+        <p>Select Range - click an item, hold shift, then click on another.</p>
     </div>);
 }

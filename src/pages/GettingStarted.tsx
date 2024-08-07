@@ -3,7 +3,7 @@ import Output from "../assets/xl_converter_output.webp";
 export default function GettingStarted(){
     return(<div>
         <h1>Getting Started</h1>
-        <p>XL Converter is a powerful image converter for the latest formats.</p>
+        <p>XL Converter is an easy-to-use image converter for modern formats.</p>
         <img src={Output} />
 
         <h2>Installation</h2>
@@ -17,7 +17,7 @@ export default function GettingStarted(){
             <li>Run Anyway (button)</li>
         </ul>
         <p>Windows shows this warning on all software without an expensive digital certificate. <a href="https://ardour.org/windows_defender.html" target="_blank">More info</a></p>
-        <p>Next, follow the installer.</p>
+        <p>Next, follow the installer instructions.</p>
 
         <h3>Linux</h3>
         <ul>
@@ -45,7 +45,6 @@ export default function GettingStarted(){
         <p><code>sudo apt install libavif-gdk-pixbuf</code></p>
         <p><a href="https://codepoems.eu/posts/how-to-open-avif-images-on-linux/" target="_blank">Detailed tutorial</a></p>
         <h4>JPEG XL</h4>
-        <p>For security-conscious Linux users, sticking with AVIF may be preferable.</p>
         <p>Download the latest <a href="https://github.com/libjxl/libjxl/releases">binaries</a> for your distribution.</p>
         <p>Unpack then install them</p>
         <p><code>sudo dpkg -i *deb</code></p>

@@ -8,19 +8,20 @@ export default function Downscaling(){
         
         <h2>Percent</h2>
         <p>Scales to that percentage.</p>
-        <p>Example: 80% will result in both width and height being 80% of the original values.</p>
+        <p>Example: 80% will result in both width and height being 80% of the original resolution.</p>
 
         <h2>Shortest and Longest Side</h2>
         <p>Makes a particular side fit to the selected resolution.</p>
 
         <h2>File Size</h2>
-        <p>Scales image to desired file size (approximately).</p>
-        <p>It is about 4 times slower than regular conversion. It uses linear regression to predict image scale. Its accuracy varies, so use other modes whenever possible.</p>
-        <p>You can preserve higher resolution by decreasing the quality (in the Format Tab).</p>
+        <p>Scales image to approximated file size in kibibytes.</p>
+        <p>It is about 4 times slower than regular conversion. Its accuracy varies. You may prefer using different modes.</p>
+        <p>You can preserve higher resolution by decreasing the quality (output tab). </p>
+        <p>The algorithm uses linear regression to predict image scale.</p>
 
         <h2>Resampling Methods</h2>
         <p>You can enable custom resampling in the <b>Settings Tab</b> (<b>Custom Resampling</b> checkbox).</p>
-        <p>You should not change this unless you know a lot about resampling. By default, <b>Lanczos</b> will be used.</p>
+        <p>You should not change this unless you are very knowledgeable about resampling. By default, <b>Lanczos</b> will be used.</p>
 
         <h2>Notes</h2>
         <ul>

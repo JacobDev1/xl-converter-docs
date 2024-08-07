@@ -28,7 +28,7 @@ export default function SupportedFormats(){
         <p>Multipage images are not supported</p>
 
         <h2>Supported Color Depth</h2>
-        <p>XL Converter supports bit depths up to 16-bit. 32-bit depth is only available for JPEG XL -&gt; JPEG XL conversion.</p>
+        <p>XL Converter supports bit depths up to 16-bit. 32-bit depth is only available for JPEG XL to JPEG XL conversion.</p>
         <table>
             <thead>
                 <tr>
@@ -59,6 +59,9 @@ export default function SupportedFormats(){
                 </tr>
             </tbody>
         </table>
+
+        <h2>CMYK</h2>
+        <p>CMYK is not supported. The conversion will fail or color space will be transformed to RGB.</p>
 
         <h2>Animation</h2>
         <p>XL Converter is focused on images. Animation support is limited and will be removed in the future. Use FFmpeg instead.</p>
