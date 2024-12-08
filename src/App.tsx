@@ -55,6 +55,7 @@ function App() {
             <Route path="troubleshooting" element={<Troubleshooting />} />
             <Route path="settings" element={<Settings />} />
             <Route path="metadata" element={<Metadata />} />
+            <Route path="lossless-jpeg-transcoding" element={<JPGReconstruction />} />
             <Route path="jpg-reconstruction" element={<JPGReconstruction />} />
             <Route path="lossless-jpeg-recompression" element={<JPGReconstruction />} />
             <Route path="choosing-output" element={<ChoosingOutput />} />
