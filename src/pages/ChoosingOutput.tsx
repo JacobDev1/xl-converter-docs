@@ -19,7 +19,7 @@ export default function ChoosingOutput(){
 
         <h2>Conversion</h2>
         <ul>
-            <li>Duplicate - what to do when a file with the same name already exists in the output directory.</li>
+            <li>If Output Exists - what to do when a file with the same name already exists in the output directory.</li>
             <li>Threads - how much of your CPU to dedicate for conversion. Higher means faster. Setting it to the maximum is not advisable if you're actively using your computer.</li>
         </ul>
 

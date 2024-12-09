@@ -24,7 +24,7 @@ export default function Metadata(){
         <p>If your metadata holds significant value, consider using ExifTool directly to export it to text files.</p>
         
         <h2>Exception</h2>
-        <p>Lossless JPEG Recompression always preserves metadata, so the image can be fully reconstructed.</p>
+        <p>Lossless JPEG Transcoding always preserves metadata, so the image can be fully reconstructed.</p>
 
         <h2>Technical Explanation</h2>
         <ul>

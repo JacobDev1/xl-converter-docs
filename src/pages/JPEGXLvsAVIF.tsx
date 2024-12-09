@@ -1,51 +1,46 @@
-import digital_art_avif from '../assets/test_digital_art_avif.webp';
-import digital_art_jxl from '../assets/test_digital_art_jxl.webp';
-import photo_avif from '../assets/test_photo_avif.webp';
-import photo_jxl from '../assets/test_photo_jxl.webp';
+import cid22_all from '../assets/cid22_all.webp';
+import cid22_diagram_chart from '../assets/cid22_diagram_chart.webp';
+import cid22_landscape_nature from '../assets/cid22_landscape_nature.webp';
+import Table, { TableData } from "../components/Table";
+
+const observedLossyPerformanceData: TableData = {
+    columns: [
+        { key: "dataset", header: "Dataset", align: "left" },
+        { key: "winner", header: "Winner", align: "left" },
+        { key: "dataset_examples", header: "Dataset Examples", align: "left" },
+        { key: "explanation", header: "Explanation", align: "left" },
+    ],
+    rows: [
+        { dataset: "Photographic", winner: "JPEG XL", dataset_examples: "Photographs, scans", explanation: "JPEG XL excels at compressing photographic material thanks to the VarDCT mode." },
+        { dataset: "Non-photographic", winner: "AVIF", dataset_examples: "Screenshots, diagrams, vector graphics, Anime, digital art.", explanation: "AOM AV1 has noticeably better efficiency on synthetic images. JPEG XL can get close efficiency-wise in the Lossy Modular mode, but it comes at a cost of visual artifacts." },
+        { dataset: "Mixed", winner: "JPEG XL", dataset_examples: "A mix of photographic and non-photographic images.", explanation: "JPEG XL is better for unsorted datasets because how much more efficient it is on photographic images with VarDCT." }
+    ]
+}
 
 export default function JPEGXLvsAVIF() {
     return(<>
         <h1>JPEG XL vs AVIF</h1>
 
-        <h2>Lossy Efficiency</h2>
-        <p>JPEG XL and AVIF are both modern formats offering high compression ratios.</p>
-        <p>Recommended use cases:</p>
-        <p>JPEG XL</p>
-        <ul>
-            <li>Photographs</li>
-            <li>Large Images (8k and larger)</li>
-            <li>Scanned Documents</li>
-        </ul>
-        <p>AVIF</p>
-        <ul>
-            <li>Digital Art</li>
-            <li>Screenshots</li>
-            <li>Synthetic Images</li>
-        </ul>
+        <h2>Brief Description</h2>
+        <p>JPEG XL and AVIF are both modern image formats offering high compression ratios. They outperform HEIC, WebP, and JPEG by a wide margin.</p>
 
-        <h2>Visual Comparison</h2>
-        <p>Images have been cropped and upscaled for clearer comparison. The differences may not be noticeable in everyday use.</p>
-        
-        <h3>Photos</h3>
-        <p>JPEG XL (VarDCT, Quality 90) - 3.7 MiB</p>
-        <img src={photo_jxl} />
-        <p>AVIF (Quality 90) - 4.6 MiB</p>
-        <img src={photo_avif} />
-        <p>JPEG XL yields smaller file sizes and produces fewer artifacts than AVIF in photos. It performs exceptionally well in the high-quality range. Professionals may prefer it for its support for high bit depth and high resolution.</p>
-        <p>On the other hand, AVIF produces sharper photos in the low-to-medium quality range.</p>
-        
-        <h3>Digital Art</h3>
-        <p>JPEG XL (Modular, Quality 80) - 167 KiB</p>
-        <img src={digital_art_jxl} />
-        <p>AVIF (Quality 80) - 168 KiB</p>
-        <img src={digital_art_avif} />
-        <p>AVIF performs best on images with sharp edges and flat areas. It also maintains accurate colors and prevents discolored spots.</p>
+        <h2>CID22</h2>
+        <p>Provided by Cloudinary (JPEG XL developers). CID22 is a mixed dataset, featuring both photographic, and synthetic (non-photographic) images. <a href="https://cloudinary.com/labs/cid22" rel="noreferrer noopener" target="_blank">Source</a></p>
+        <p>JPEG XL performs well on this mixed dataset.</p>
+        <img src={cid22_all} />
+        <p>JPEG XL performs even better when tested on just photographic data.</p>
+        <img src={cid22_landscape_nature} />
+        <p>AVIF (AOM AV1) outperforms JPEG XL on diagrams and charts, which is an example of non-photographic (synthetic) data.</p>
+        <img src={cid22_diagram_chart} />
+        <p>Try this <a href="https://cloudinary.com/labs/cid22/plots" rel="noreferrer noopener" target="_blank">interactive comparison</a>.</p>
+        <p>This dataset was covered in more detail in the official JPEG XL presentation by Jon Sneyers  <a href="https://docs.google.com/presentation/d/1LlmUR0Uoh4dgT3DjanLjhlXrk_5W2nJBDqDAMbhe8v8/edit#slide=id.g2c51e8f95e1_0_422" rel="noreferrer noopener" target="_blank">here</a>.</p>
 
-        <h3>Try Comparing Yourself</h3>
-        <p>Convert an image to both formats, open GIMP, click on "File" and "Open as Layers...". Toggle between the layers to compare the images.</p>
-
-        <h2>Lossless</h2>
-        <p>JPEG XL lossless mode offers the best efficiency. WebP performs better on certain images, but on average JPEG XL is the <a href="https://codepoems.eu/posts/how-to-reduce-the-size-of-lossless-images/" target="_blank">best</a>. AVIF lossless mode is nothing worthy of note.</p>
+        <h2>Personally Observed Performance</h2>
+        <p>This is a subjective overview. Efficiency on your dataset may vary.</p>
+        <h3>Lossy</h3>
+        <Table tableData={observedLossyPerformanceData} />
+        <h3>Lossless</h3>
+        <p>JPEG XL lossless mode offers the best efficiency overall. WebP may perform better on certain images, but JPEG XL is the <a href="https://codepoems.eu/posts/how-to-reduce-the-size-of-lossless-images/" target="_blank">best</a> on average. AVIF lossless mode is oftentimes worse than PNG.</p>
 
         <h2>Conversion Speed</h2>
         <p>Higher is better</p>
@@ -72,11 +67,11 @@ export default function JPEGXLvsAVIF() {
             </tr>
             <tr>
                 <td>AVIF</td>
-                <td>libavif</td>
+                <td>AOM AV1</td>
                 <td>0.7x</td>
             </tr>
         </table>
-        <p>Speed / Effort were set to default. Input format was PNG.</p>
+        <small>Speed / Effort: default. Input: PNG.</small>
 
         <h2>Capabilities</h2>
         <table>
@@ -115,24 +110,16 @@ export default function JPEGXLvsAVIF() {
                 <td>Yes</td>
                 <td>Yes</td>
             </tr>
-            <tr>
-                <td>Additional Features</td>
-                <td>Lossless JPEG Recompression</td>
-                <td></td>
-            </tr>
         </table>
         <p>*Only 8193 x 4320 natively, larger sizes are achieved with tiling (which lowers efficiency and introduces artifacts).</p>
-
-        <h2>Technical State</h2>
-        <p>While JPEG XL is more future-oriented, it's still in its early stages. Bugs are to be expected. The JPEG XL repo states the following:</p>
-        <p><em>"Note: This release is for evaluation purposes and may contain bugs [...]"</em></p>
-
-        <h2>Additional Information</h2>
-        <p>It's important to note that both AVIF and JPEG XL significantly outperform HEIF. Consider not using HEIF as its license makes it hard to support.</p>
-        <p>Samples:{' '}
-            <a href="https://pixabay.com/vectors/girl-clouds-stars-art-calm-anime-8435339/" target="_blank" rel="noreferrer">Digital Art</a> / {' '}
-            <a href="https://unsplash.com/photos/gray-concrete-building-during-daytime-q0tlOqyn_fk/" target="_blank" rel="noreferrer">Photos</a>
-        </p>
-        <p>XL Converter uses AOM-AV1 for AVIF. Other AV1 encoders do not match its quality.</p>
+        <p>Note: Most digital images are encoded with a bit depth of 8.</p>
+        <p>JPEG XL has extra features, such as:</p>
+        <ul>
+            <li>Lossless JPEG Transcoding</li>
+            <li>(Better) Progressive Decoding</li>
+            <li>Generation Loss Resilience</li>
+            <li>Photon Noise</li>
+            <li>and much more...</li>
+        </ul>
     </>);
 }

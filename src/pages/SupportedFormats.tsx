@@ -14,7 +14,6 @@ const supportedFormatsData: TableData = {
         { format: "JPEG", writing: "Yes", reading: "Yes", ext: "jpg, jpeg, jfif, jif, jpe" },
         { format: "PNG", writing: "Yes", reading: "Yes", ext: "png" },
         { format: "TIFF", writing: "No", reading: "Yes", ext: "tiff, tif" },
-        { format: "HEIF", writing: "No", reading: "Yes", ext: "heif, heifs, heic, heics, avci, avcs, hif" },
         { format: "JP2", writing: "No", reading: "Yes", ext: "jp2" },
         { format: "BMP", writing: "No", reading: "Yes", ext: "bmp" },
         { format: "ICO", writing: "No", reading: "Yes", ext: "ico" },

@@ -65,24 +65,22 @@ export default function Formats(){
                 <li>70 - medium-high quality and small file size</li>
                 <li>60 - space-saving, noticeable blurriness</li>
             </ul>
-            <li>Effort - higher is better quality but slower. Its behavior depends on the mode used.
+            <li>Effort - higher is better quality or lower file size but slower. Its behavior depends on the mode used.
                 <ul>
-                    <li>7 - normal speed and good quality</li>
-                    <li>9 - slower speed and better quality or smaller file size</li>
-                    <li>Intelligent Effort - prioritizes smaller file size</li>
+                    <li>7 - normal speed with modest file size and good quality.</li>
+                    <li>9 - very slow but produces lowest file size or best quality.</li>
                 </ul>
             </li>
             <li>Effort - behavior
                 <ul>
                     <li>Lossy - higher values result in higher quality. File size may end up larger, especially for non-photographic images.</li>
-                    <li>Lossy (Modular) - higher values result in better quality and smaller file size, but only for non-photographic images.</li>
-                    <li>Lossless - higher values always result in lower file size.</li>
+                    <li>Lossless and Lossy Modular - higher values always result in lower file size.</li>
                 </ul>
             </li>
-            <li>Lossy Mode - Modular
+            <li>Lossy Modular
                 <ul>
-                    <li>Disabled - best for photos and complex images.</li>
-                    <li>Enabled - best for images with sharp edges and flat areas, like digital art, screenshots or documents. Can lower file size and/or improve quality.</li>
+                    <li>Disabled - uses VarDCT mode.</li>
+                    <li>Enabled - offers lower file size and increased eligibility for non-photos. It has a drawback of introducing discoloration and artifacts on the edges. Use it sparingly.</li>
                 </ul>
             </li>
         </ul>

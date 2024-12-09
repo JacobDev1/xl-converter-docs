@@ -49,5 +49,8 @@ export default function GettingStarted(){
         <p>Unpack then install them</p>
         <p><code>sudo dpkg -i *deb</code></p>
         <p><a href="https://codepoems.eu/posts/how-to-open-jpeg-xl-images-on-linux/" target="_blank">Detailed tutorial</a></p>
+
+        <h2>Tip</h2>
+        <p>Hover your cursor over a widget for a moment to get a brief explanation of its functionality.</p>
     </div>);
 }
