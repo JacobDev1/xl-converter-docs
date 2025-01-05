@@ -1,8 +1,10 @@
 ## XL Converter Documentation
 
-The documentation for [XL Converter](https://github.com/JacobDev1/xl-converter).
+The old documentation for [XL Converter](https://github.com/JacobDev1/xl-converter).
 
-Hosted [here](https://xl-docs.codepoems.eu).
+> ![IMPORTANT]
+> This documentation has been deprecated and is no longer maintained.
+> The new one is available [here](https://xl-docs.codepoems.eu/).
 
 ![](./screenshots/getting_started.webp)
 
