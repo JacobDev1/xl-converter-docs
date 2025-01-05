@@ -71,7 +71,6 @@ export default function SupportedFormats(){
                     <th>Encoding</th>
                     <th>Decoding</th>
                     <th>Encoding Input</th>
-                    <th>Notes</th>
                 </tr>
             </thead>
             <tbody>
@@ -79,15 +78,13 @@ export default function SupportedFormats(){
                     <td>JPEG XL</td>
                     <td>Yes</td>
                     <td>-</td>
-                    <td>GIF, APNG</td>
-                    <td>-</td>
+                    <td>GIF</td>
                 </tr>
                 <tr>
                     <td>WebP</td>
                     <td>Yes</td>
                     <td>-</td>
                     <td>GIF</td>
-                    <td>Partial support</td>
                 </tr>
             </tbody>
         </table>

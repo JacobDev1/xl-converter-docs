@@ -11,8 +11,8 @@ export default function Downscaling(){
         <p>Clamps the resolutions to fit in the selected range.</p>
         
         <h2>Percent</h2>
-        <p>Scales to that percentage.</p>
-        <p>Example: 80% will result in both width and height being 80% of the original resolution.</p>
+        <p>Scales to the specified percentage of each dimension.</p>
+        <p>For example, 50% of 1920 x 1080 will result in 960 x 540.</p>
 
         <h2>Shortest and Longest Side</h2>
         <p>Makes a particular side fit to the selected resolution.</p>

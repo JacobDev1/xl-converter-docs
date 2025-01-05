@@ -34,8 +34,8 @@ export default function JPGReconstruction(){
         <h3>Normalize</h3>
         <p>Allows for transcoding problematic JPEG images. Rewrites image structure without affecting quality or metadata.</p>
         <p>Discards unnecessary information, such as unused quantization tables or arbitrary tail data. It may also lower file size.</p>
-        <p>Equivalent to <code>jpegtran -copy all -optimize</code>.</p>
-        <p>With this enabled, the checksum of a JPEG image you can reconstruct will change. Images will take slightly longer to process if enabled.</p>
+        <p>With this enabled, the checksum of a JPEG image you can reconstruct will change and its file size will increase.</p>
+        <p>Equivalent to <code>jpegtran -copy all -optimize</code>. Images will take slightly longer to process if enabled.</p>
 
         <h2>Metadata</h2>
         <p>In the aforementioned modes, metadata will always be preserved regardless of settings. Preserving Date & Time works as usual.</p>

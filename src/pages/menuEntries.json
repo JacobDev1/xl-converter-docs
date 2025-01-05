@@ -10,6 +10,5 @@
     ["Shortcuts", "/shortcuts"],
     ["Troubleshooting", "/troubleshooting"],
     ["FAQ", "/faq"],
-    ["Settings", "/settings"],
-    ["JPEG XL vs AVIF", "/jpeg-xl-vs-avif"]
+    ["Settings", "/settings"]
 ]
