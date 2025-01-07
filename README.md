@@ -2,7 +2,7 @@
 
 The old documentation for [XL Converter](https://github.com/JacobDev1/xl-converter).
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > This documentation has been deprecated and is no longer maintained.
 > The new one is available [here](https://xl-docs.codepoems.eu/).
 
